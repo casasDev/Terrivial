@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Terrivial</string>
     <string name="jugar">Jugar</string>
+    <string name="todo">TODO</string>
 </resources>

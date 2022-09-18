@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vista.MainActivity" >
+    tools:context=".vista.MainActivity">
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imageView2"
@@ -22,19 +21,6 @@
         android:layout_marginStart="55dp"
         android:layout_marginEnd="57dp"
         android:layout_marginBottom="-357dp"
-        android:text="@string/jugar" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="335dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="-99dp"
-        app:srcCompat="@android:drawable/ic_dialog_info" />
-
-
+        android:text="@string/jugar"
+        />
 </RelativeLayout>
