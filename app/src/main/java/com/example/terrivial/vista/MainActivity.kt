@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         partida.llenarMapas(this)
         jugar = findViewById(R.id.jugar)
         jugar.setOnClickListener {
+
             startActivity(Intent(this, MainActivity2::class.java))
         }
     }
