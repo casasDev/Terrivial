@@ -52,7 +52,7 @@ public abstract class Categoria {
         new BufferedReader(
                 new InputStreamReader(
                         c.getAssets().open("Pregunticas/"
-                        +this.getClass().toString().substring(35)+
+                        +this.getNombre()+
                         "/"+subCateg+".txt"), StandardCharsets.UTF_8))
                 .lines().forEach(l ->{
                     String[] s = l.split(",");

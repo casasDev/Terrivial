@@ -2,4 +2,8 @@
     <string name="app_name">Terrivial</string>
     <string name="jugar">Jugar</string>
     <string name="todo">TODO</string>
+    <string name="puntos">PUNTOS:</string>
+    <string name="geopolitica">GEOPOLITICA</string>
+    <string name="ciencia">CIENCIA</string>
+    <string name="entretenimiento">ENTRETENIMIENTO</string>
 </resources>
