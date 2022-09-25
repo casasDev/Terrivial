@@ -37,7 +37,9 @@ public abstract class Categoria {
     public Map<String, List<Pregunta>> getPregunticas() {
         return this.pregunticas;
     }
-
+    public Map<String ,Boolean> getPunticos(){
+        return this.punticos;
+    }
     public void anadirLista(String subCateg, List<Pregunta> lista) {
         this.pregunticas.put(subCateg, lista);
     }

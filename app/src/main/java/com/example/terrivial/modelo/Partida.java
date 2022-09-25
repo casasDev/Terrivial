@@ -30,7 +30,7 @@ public class Partida {
        categorias.forEach(c -> c.llenarMapa(cc));
     }
     public void actualizarPregunta(String c){
-       this.preguntaActual = categorias.stream().filter(cc -> cc.getNombre().equals(c)).findAny().get().preguntaRandom();
+       this.preguntaActual = categorias.stream().filter(cc -> cc.getNombre().equalsIgnoreCase(c)).findAny().get().preguntaRandom();
     }
     public Pregunta getPreguntaActual(){
         return this.preguntaActual;
