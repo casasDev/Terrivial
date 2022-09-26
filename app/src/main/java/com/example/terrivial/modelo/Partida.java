@@ -1,10 +1,10 @@
 package com.example.terrivial.modelo;
 
 import android.content.Context;
-
-import com.example.terrivial.vista.MainActivity;
+import android.util.Log;
 
 import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,8 +13,9 @@ public class Partida {
     private static Partida mPartida;
     private int puntos;
     private boolean finalizada;
-    private List<Categoria> categorias;
+    private final List<Categoria> categorias;
     private Categoria categoriaActual;
+    private final PropertyChangeSupport p = new PropertyChangeSupport(this);
     private Partida(){
         finalizada = false;
         puntos = 0;
@@ -27,17 +28,29 @@ public class Partida {
         if(mPartida == null) mPartida = new Partida();
         return mPartida;
     }
+    public boolean isFinalizada(){
+        return this.finalizada;
+    }
+    public void reset(){
+        mPartida = new Partida();
+    }
+    public void addPropertyChangeListener(PropertyChangeListener l){
+        this.p.addPropertyChangeListener(l);
+    }
     public void addListeners(PropertyChangeListener l){
         this.categorias.forEach(c -> c.addPropertyChangeListener(l));
+        this.addPropertyChangeListener(l);
+        this.anadirPuntos(0);
     }
     public boolean esRespuestaCorrecta(String r){
         if(preguntaActual.respuestaCorrecta(r)){
             categoriaActual.asignarPunticos(preguntaActual.getSubCateg(),true);
+            if(isFinalizada()) this.p.firePropertyChange("fin",null,null);
             return true;
         }
        else {
             categoriaActual.asignarPunticos("",false);
-            return false;
+         return false;
         }
     }
 
@@ -53,6 +66,9 @@ public class Partida {
     }
     public void anadirPuntos(int p){
         this.puntos += p;
-        if(p==5) finalizada = true;
+        this.p.firePropertyChange("puntacos", "PUNTOS: "+this.puntos,false);
+        if(this.puntos==10) {
+            finalizada = true;
+        }
     }
 }

@@ -3,32 +3,30 @@ package com.example.terrivial.vista
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.Button
-import androidx.gridlayout.widget.GridLayout
 import android.widget.RadioButton
+import android.widget.TextView
 import android.widget.Toast
-import androidx.annotation.IdRes
-import androidx.core.view.children
+import androidx.appcompat.app.AppCompatActivity
+import androidx.gridlayout.widget.GridLayout
 import com.example.terrivial.R
-import com.example.terrivial.modelo.Ciencia
-import com.example.terrivial.modelo.Entretenimiento
-import com.example.terrivial.modelo.Geopolitica
-import com.example.terrivial.modelo.Partida
+import com.example.terrivial.modelo.*
 import java.beans.PropertyChangeEvent
 import java.beans.PropertyChangeListener
-import java.util.*
-import kotlin.collections.HashMap
 
 class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
     private lateinit var grids : List<GridLayout>
     private val punticos : MutableMap<String, RadioButton> = HashMap()
     private lateinit var botones : List<Button>
     private val partida = Partida.getInstance()
+    private lateinit var puntos : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+        this.puntos = findViewById(R.id.puntos)
         partida.addListeners(this)
         grids = listOf(findViewById(R.id.geop),findViewById(R.id.cienc),findViewById(R.id.entr))
         generarRadio()
@@ -49,7 +47,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
                             false
                         }
                         g.addView(r)
-                        punticos.put(sc, r)
+                        punticos[sc] = r
                     }
                     R.id.cienc -> Ciencia.getInstance().pregunticas.keys.forEach{ sc ->
                         val r = RadioButton(this)
@@ -62,7 +60,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
                             false
                         }
                         g.addView(r)
-                        punticos.put(sc, r)
+                        punticos[sc] = r
                     }
                     R.id.entr -> Entretenimiento.getInstance().pregunticas.keys.forEach{ sc ->
                         val r = RadioButton(this)
@@ -75,7 +73,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
                           false
                         }
                         g.addView(r)
-                        punticos.put(sc, r)
+                        punticos[sc] = r
                     }
                 }
             }
@@ -90,12 +88,36 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
     }
 
     override fun propertyChange(p0: PropertyChangeEvent?) {
-        if(p0?.propertyName.equals("subPuntico"))
+        if (p0?.propertyName.equals("fin")){
+            Log.d("OYEEEE","XD")
+            this.punticos.values.forEach{
+                it.visibility = View.GONE
+            }
+            this.botones.forEach{
+                it.visibility = View.GONE
+            }
+            this.puntos.text = getString(R.string.fin)
+        }
+        else if(p0?.propertyName.equals("subPuntico")) {
             punticos[p0!!.oldValue]!!.isChecked = true
-       else if(p0?.propertyName.equals("fallaste")){
+        } else if(p0?.propertyName.equals("fallaste")){
             (p0!!.oldValue as Set<*>).forEach{
                 punticos[it]!!.isChecked = false
             }
-        }
+        } else if(p0?.propertyName.equals("puntoConseguido")){
+            botones.filter{
+                it.text.toString().equals(p0!!.oldValue.toString(), true)
+            }[0].isEnabled = false
+            (p0!!.newValue as Categoria).pregunticas.keys.forEach {
+                punticos[it]!!.visibility = View.GONE
+            }
+        } else if(p0?.propertyName.equals("puntacos")) this.puntos.text = p0!!.oldValue as String
+
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        partida.reset()
+        finish()
     }
 }

@@ -1,8 +1,8 @@
 package com.example.terrivial.modelo;
-import static java.util.stream.IntStream.range;
-import android.content.Context;
 
-import com.example.terrivial.vista.MainActivity;
+import static java.util.stream.IntStream.range;
+
+import android.content.Context;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
@@ -18,10 +18,11 @@ import java.util.Random;
 
 public abstract class Categoria {
     private boolean puntoConseguido;
-    private String nombre;
-    private Map<String, List<Pregunta>> pregunticas;
-    private Map<String, Boolean> punticos;
+    private final String nombre;
+    private final Map<String, List<Pregunta>> pregunticas;
+    private final Map<String, Boolean> punticos;
     private final PropertyChangeSupport p = new PropertyChangeSupport(this);
+    private int puntosAsignados;
     public Categoria() {
         puntoConseguido = false;
         pregunticas = new HashMap<>();
@@ -57,9 +58,11 @@ public abstract class Categoria {
             punticos.keySet().forEach(c -> punticos.put(c, false));
             p.firePropertyChange("fallaste", punticos.keySet(),false);
         }
-        if (punticos.values().stream().allMatch(i -> i))
+        if (punticos.values().stream().allMatch(i -> i)) {
             this.puntoConseguido = true;
-            p.firePropertyChange("puntoConseguido", this.nombre,false);
+            Partida.getInstance().anadirPuntos(this.puntosAsignados);
+            p.firePropertyChange("puntoConseguido", this.nombre, this);
+        }
     }
     private List<Pregunta> leerFichero(String subCateg, Context c) throws IOException {
         List<Pregunta> lista = new ArrayList<>();
@@ -86,6 +89,7 @@ public abstract class Categoria {
                     e.printStackTrace();
                 }
             });
+            this.puntosAsignados = this.pregunticas.keySet().size();
         }
 
 }

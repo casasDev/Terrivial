@@ -1,15 +1,12 @@
 package com.example.terrivial.vista
 
-import android.content.res.ColorStateList
 import android.graphics.Color
-import android.graphics.drawable.Drawable
-import android.graphics.drawable.ShapeDrawable
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.terrivial.R
 import com.example.terrivial.modelo.Partida
-import java.util.*
+import kotlinx.coroutines.newFixedThreadPoolContext
 import java.util.Collections.shuffle
 
 class Respondeme : AppCompatActivity() {
@@ -25,17 +22,19 @@ class Respondeme : AppCompatActivity() {
     }
     private fun rellenar(){
         var c = 0
-        pregunta.text = partida.preguntaActual.enunciado
+        pregunta.text = partida.preguntaActual.enunciado + partida.preguntaActual.respuestas[3]
         shuffle(respuestas)
         partida.preguntaActual.respuestas.forEach {
-            respuestas[c].text = it
-            c++
+            if(c in (0..3)) {
+                respuestas[c].text = it
+                c++
+            }
         }
         respuestas.forEach{ r ->
             r.setOnClickListener{
                partida.esRespuestaCorrecta(r.text.toString())
                 respuestas.forEach{
-                    if(!it.equals(respuestas[3])) it.background.setTint(Color.RED)
+                    if(it != respuestas[3]) it.background.setTint(Color.RED)
                     else it.background.setTint(Color.GREEN)
                     it.setOnClickListener(null)
                 }
@@ -49,5 +48,6 @@ class Respondeme : AppCompatActivity() {
         respuestas.forEach{
             it.background.setTint(Color.WHITE)
         }
+        if(respuestas[0].hasOnClickListeners()) partida.esRespuestaCorrecta("")
     }
     }
