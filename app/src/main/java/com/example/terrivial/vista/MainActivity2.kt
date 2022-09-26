@@ -1,5 +1,6 @@
 package com.example.terrivial.vista
 
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
@@ -29,7 +30,7 @@ class MainActivity2 : AppCompatActivity() {
         grids = listOf(findViewById(R.id.geop),findViewById(R.id.cienc),findViewById(R.id.entr))
         generarRadio()
         botones = listOf(findViewById(R.id.geo),findViewById(R.id.ceincia),findViewById(R.id.entretenimiento))
-
+        botonesCategoria()
     }
     private fun generarRadio() {
         grids.forEach { g ->
@@ -80,6 +81,7 @@ class MainActivity2 : AppCompatActivity() {
         botones.forEach{ b ->
             b.setOnClickListener{
                 partida.actualizarPregunta(b.text.toString())
+                startActivity(Intent(this, Respondeme::class.java))
             }
         }
     }
