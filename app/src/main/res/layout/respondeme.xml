@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vista.Respondeme">
+
+    <TextView
+        android:id="@+id/pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:background="@drawable/textshape"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/respuesta0"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pregunta"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/buttonshape"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/respuesta1"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pregunta"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/buttonshape"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/respuesta2"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pregunta"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/buttonshape"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/respuesta3"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pregunta"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/buttonshape"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

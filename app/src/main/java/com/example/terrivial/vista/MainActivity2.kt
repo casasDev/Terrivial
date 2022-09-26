@@ -16,10 +16,12 @@ import com.example.terrivial.modelo.Ciencia
 import com.example.terrivial.modelo.Entretenimiento
 import com.example.terrivial.modelo.Geopolitica
 import com.example.terrivial.modelo.Partida
+import java.beans.PropertyChangeEvent
+import java.beans.PropertyChangeListener
 import java.util.*
 import kotlin.collections.HashMap
 
-class MainActivity2 : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
     private lateinit var grids : List<GridLayout>
     private val punticos : MutableMap<String, RadioButton> = HashMap()
     private lateinit var botones : List<Button>
@@ -27,6 +29,7 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+        partida.addListeners(this)
         grids = listOf(findViewById(R.id.geop),findViewById(R.id.cienc),findViewById(R.id.entr))
         generarRadio()
         botones = listOf(findViewById(R.id.geo),findViewById(R.id.ceincia),findViewById(R.id.entretenimiento))
@@ -85,4 +88,14 @@ class MainActivity2 : AppCompatActivity() {
             }
         }
     }
+
+    override fun propertyChange(p0: PropertyChangeEvent?) {
+        if(p0?.propertyName.equals("subPuntico"))
+            punticos[p0!!.oldValue]!!.isChecked = true
+       else if(p0?.propertyName.equals("fallaste")){
+            (p0!!.oldValue as Set<*>).forEach{
+                punticos[it]!!.isChecked = false
+            }
+        }
     }
+}

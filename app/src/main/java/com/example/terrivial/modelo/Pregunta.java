@@ -22,4 +22,13 @@ public class Pregunta {
         public boolean respuestaCorrecta(String r){
            return r.equals(respuestas.get(respuestas.size()-1));
         }
+        public String getEnunciado(){
+            return this.enunciado;
+        }
+        public List<String> getRespuestas(){
+            return this.respuestas;
+        }
+        public String getSubCateg(){
+            return this.subCateg;
+        }
 }

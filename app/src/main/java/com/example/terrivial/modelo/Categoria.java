@@ -4,6 +4,8 @@ import android.content.Context;
 
 import com.example.terrivial.vista.MainActivity;
 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,12 +21,15 @@ public abstract class Categoria {
     private String nombre;
     private Map<String, List<Pregunta>> pregunticas;
     private Map<String, Boolean> punticos;
-
+    private final PropertyChangeSupport p = new PropertyChangeSupport(this);
     public Categoria() {
         puntoConseguido = false;
         pregunticas = new HashMap<>();
         punticos = new HashMap<>();
         nombre = this.getClass().toString().substring(35);
+    }
+    public void addPropertyChangeListener(PropertyChangeListener l){
+        this.p.addPropertyChangeListener(l);
     }
     public String getNombre(){
         return this.nombre;
@@ -45,9 +50,16 @@ public abstract class Categoria {
     }
 
     public void asignarPunticos(String subCateg, boolean puntico) {
-        punticos.put(subCateg, puntico);
-        if (punticos.values().stream().anyMatch(i -> !i))
+        if(puntico) {
+            punticos.put(subCateg, true);
+            p.firePropertyChange("subPuntico", subCateg, false);
+        } else{
+            punticos.keySet().forEach(c -> punticos.put(c, false));
+            p.firePropertyChange("fallaste", punticos.keySet(),false);
+        }
+        if (punticos.values().stream().allMatch(i -> i))
             this.puntoConseguido = true;
+            p.firePropertyChange("puntoConseguido", this.nombre,false);
     }
     private List<Pregunta> leerFichero(String subCateg, Context c) throws IOException {
         List<Pregunta> lista = new ArrayList<>();
