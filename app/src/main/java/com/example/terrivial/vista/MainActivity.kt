@@ -1,9 +1,11 @@
 package com.example.terrivial.vista
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.terrivial.R
+import com.example.terrivial.modelo.Ciencia
 import com.example.terrivial.modelo.Partida
 
 class MainActivity : AppCompatActivity() {

@@ -11,4 +11,4 @@ public class Geopolitica extends Categoria{
         if(mGeopolitica == null) mGeopolitica = new Geopolitica();
         return mGeopolitica;
     }
-}
+    }

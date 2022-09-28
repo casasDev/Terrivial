@@ -117,7 +117,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
 
     override fun onBackPressed() {
         super.onBackPressed()
-        partida.reset()
+        startActivity(Intent(this, MainActivity::class.java))
         finish()
     }
 }

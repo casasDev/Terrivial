@@ -13,6 +13,4 @@ public class Entretenimiento extends Categoria{
             if(mEntretenimiento == null) mEntretenimiento = new Entretenimiento();
             return mEntretenimiento;
         }
-
-
 }

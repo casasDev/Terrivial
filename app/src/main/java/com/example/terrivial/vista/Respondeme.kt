@@ -6,7 +6,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.terrivial.R
 import com.example.terrivial.modelo.Partida
-import kotlinx.coroutines.newFixedThreadPoolContext
 import java.util.Collections.shuffle
 
 class Respondeme : AppCompatActivity() {
@@ -22,7 +21,7 @@ class Respondeme : AppCompatActivity() {
     }
     private fun rellenar(){
         var c = 0
-        pregunta.text = partida.preguntaActual.enunciado + partida.preguntaActual.respuestas[3]
+        pregunta.text = partida.preguntaActual.enunciado
         shuffle(respuestas)
         partida.preguntaActual.respuestas.forEach {
             if(c in (0..3)) {

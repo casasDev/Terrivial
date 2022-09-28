@@ -26,7 +26,7 @@ Entertainment,Lee Marvin won a Best Actor Oscar for which movie?,Cat Ballou,Pock
 Entertainment,Lionel Barrymore won a Best Actor Oscar for which movie?,A Free Soul,A Misunderstood Boy,You Can't Take It With You,On Borrowed Time
 Entertainment,Marlon Brando won a Best Actor Oscar for which movie?,On the Waterfront,Julius Caesar,A Dry White Season,Apocalypse Now
 Entertainment,Maximilian Schell won a Best Actor Oscar for which movie?,Judgment at Nuremberg,Krakatoa, East of Java,The Black Hole,The ODESSA File
-Entertainment,Michael Douglas won a Best Actor Oscar for which movie?,One Flew Over the Cuckoo's Nest,A Perfect Murder,Running,The Game
+Entertainment,Michael Douglas won a Best Film Oscar as producer for which movie?,One Flew Over the Cuckoo's Nest,A Perfect Murder,Running,The Game
 Entertainment,Paul Lukas won a Best Actor Oscar for which movie?,Watch on the Rhine,Confessions of a Nazi Spy,20,000 Leagues Under the Sea,I Found Stella Parish
 Entertainment,Paul Muni won a Best Actor Oscar for which movie?,The Story of Louis Pasteur,The Life of Emile Zola,The Good Earth,The Last Angry Man
 Entertainment,Paul Scofield won a Best Actor Oscar for which movie?,A Man for All Seasons,The Attic: The Hiding of Anne Frank,Animal Farm,The Crucible

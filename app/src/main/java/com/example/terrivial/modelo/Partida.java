@@ -31,9 +31,6 @@ public class Partida {
     public boolean isFinalizada(){
         return this.finalizada;
     }
-    public void reset(){
-        mPartida = new Partida();
-    }
     public void addPropertyChangeListener(PropertyChangeListener l){
         this.p.addPropertyChangeListener(l);
     }

@@ -1,4 +1,4 @@
-Geopolitics,Abraham Lincoln became US president in which of the following years?,1861,1859,1857,1857
+Geopolitics,Abraham Lincoln became US president in which of the following years?,1861,1859,2022,1857
 Geopolitics,Andrew Johnson became US president in which of the following years?,1865,1863,1861,1868
 Geopolitics,Andrew Jackson became US president in which of the following years?,1829,1825,1828,1830
 Geopolitics,Bill Clinton became US president in which of the following years?,1993,1992,1995,1990
