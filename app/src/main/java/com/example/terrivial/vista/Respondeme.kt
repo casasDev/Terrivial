@@ -9,6 +9,8 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.daimajia.androidanimations.library.Techniques
+import com.daimajia.androidanimations.library.YoYo
 import com.example.terrivial.R
 import com.example.terrivial.modelo.Partida
 import java.util.Collections.shuffle
@@ -31,6 +33,7 @@ class Respondeme : AppCompatActivity() {
     @SuppressLint("ClickableViewAccessibility")
     private fun rellenar(){
         var c = 0
+        YoYo.with(Techniques.RotateInUpLeft).duration(500).playOn(pregunta)
         pregunta.text = partida.preguntaActual.enunciado
         shuffle(respuestas)
         partida.preguntaActual.respuestas.forEach {
@@ -42,12 +45,14 @@ class Respondeme : AppCompatActivity() {
         respuestas.forEach{
 
                 r ->
+            YoYo.with(Techniques.RotateInUpLeft).duration(500).playOn(r)
             r.setOnClickListener{
-               partida.esRespuestaCorrecta(r.text.toString())
+              if(!partida.esRespuestaCorrecta(r.text.toString())) YoYo.with(Techniques.Shake).duration(500).playOn(r)
                 respuestas.forEach{
                     if(it != respuestas[3]) it.background.setTint(Color.RED)
                     else it.background.setTint(Color.GREEN)
                     it.setOnClickListener(null)
+                    it.setOnTouchListener(null)
                 }
             }
             r.setOnTouchListener{
