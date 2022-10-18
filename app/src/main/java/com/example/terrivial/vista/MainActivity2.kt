@@ -1,10 +1,10 @@
 package com.example.terrivial.vista
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.view.animation.Animation
@@ -85,6 +85,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
                 }
             }
         }
+    @SuppressLint("ClickableViewAccessibility")
     private fun botonesCategoria(){
         botones.forEach{ b ->
             b.setOnClickListener {
@@ -92,7 +93,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
                 startActivity(Intent(this, Respondeme::class.java))
             }
             b.setOnTouchListener{
-                view: View, motion : MotionEvent ->
+                    _: View, motion : MotionEvent ->
                 if(motion.action == MotionEvent.ACTION_DOWN)
                     b.startAnimation(scaleUp)
                 else if (motion.action == MotionEvent.ACTION_UP)
