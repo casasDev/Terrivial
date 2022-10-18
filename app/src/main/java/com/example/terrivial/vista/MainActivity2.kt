@@ -5,7 +5,10 @@ import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
+import android.view.MotionEvent
 import android.view.View
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
@@ -23,10 +26,14 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
     private lateinit var botones : List<Button>
     private val partida = Partida.getInstance()
     private lateinit var puntos : TextView
+    private lateinit var scaleUp : Animation
+    private lateinit var scaleDown : Animation
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         this.puntos = findViewById(R.id.puntos)
+        scaleUp = AnimationUtils.loadAnimation(this,R.anim.scale_up1)
+        scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down1)
         partida.addListeners(this)
         grids = listOf(findViewById(R.id.geop),findViewById(R.id.cienc),findViewById(R.id.entr))
         generarRadio()
@@ -80,16 +87,23 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
         }
     private fun botonesCategoria(){
         botones.forEach{ b ->
-            b.setOnClickListener{
+            b.setOnClickListener {
                 partida.actualizarPregunta(b.text.toString())
                 startActivity(Intent(this, Respondeme::class.java))
+            }
+            b.setOnTouchListener{
+                view: View, motion : MotionEvent ->
+                if(motion.action == MotionEvent.ACTION_DOWN)
+                    b.startAnimation(scaleUp)
+                else if (motion.action == MotionEvent.ACTION_UP)
+                    b.startAnimation(scaleDown)
+                false
             }
         }
     }
 
     override fun propertyChange(p0: PropertyChangeEvent?) {
         if (p0?.propertyName.equals("fin")){
-            Log.d("OYEEEE","XD")
             this.punticos.values.forEach{
                 it.visibility = View.GONE
             }

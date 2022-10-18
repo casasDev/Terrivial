@@ -36,7 +36,7 @@ public abstract class Categoria {
         return this.nombre;
     }
     public Pregunta preguntaRandom() {
-        List<Pregunta> p = (List<Pregunta>) (pregunticas.values().toArray()[new Random().nextInt(pregunticas.keySet().size())]);
+        List<Pregunta> p = (List<Pregunta>)(pregunticas.values().toArray()[new Random().nextInt(pregunticas.keySet().size())]);
         return p.get(new Random().nextInt(p.size()));
     }
 
