@@ -3,7 +3,6 @@ package com.example.terrivial.modelo;
 import static java.util.stream.IntStream.range;
 
 import android.content.Context;
-
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.io.BufferedReader;
@@ -23,11 +22,16 @@ public abstract class Categoria {
     private final Map<String, Boolean> punticos;
     private final PropertyChangeSupport p = new PropertyChangeSupport(this);
     private int puntosAsignados;
-    public Categoria() {
+    private final int color;
+    public Categoria(int pColor) {
         puntoConseguido = false;
         pregunticas = new HashMap<>();
         punticos = new HashMap<>();
         nombre = this.getClass().toString().substring(35);
+        this.color = pColor;
+    }
+    public int getColor(){
+        return this.color;
     }
     public void addPropertyChangeListener(PropertyChangeListener l){
         this.p.addPropertyChangeListener(l);
@@ -36,7 +40,7 @@ public abstract class Categoria {
         return this.nombre;
     }
     public Pregunta preguntaRandom() {
-        List<Pregunta> p = (List<Pregunta>)(pregunticas.values().toArray()[new Random().nextInt(pregunticas.keySet().size())]);
+        List<Pregunta> p =(List<Pregunta>)pregunticas.values().toArray()[new Random().nextInt(pregunticas.keySet().size())];
         return p.get(new Random().nextInt(p.size()));
     }
 

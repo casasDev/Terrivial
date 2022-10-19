@@ -3,7 +3,6 @@ package com.example.terrivial.vista
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.ColorStateList
-import android.graphics.Color
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
@@ -16,7 +15,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.gridlayout.widget.GridLayout
 import com.example.terrivial.R
-import com.example.terrivial.modelo.*
+import com.example.terrivial.modelo.Categoria
+import com.example.terrivial.modelo.Partida
 import java.beans.PropertyChangeEvent
 import java.beans.PropertyChangeListener
 
@@ -43,45 +43,9 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
     private fun generarRadio() {
         grids.forEach { g ->
                 when (g.id) {
-                    R.id.geop -> Geopolitica.getInstance().pregunticas.keys.forEach { sc ->
-                        val r = RadioButton(this)
-                        r.buttonTintList = ColorStateList.valueOf(Color.BLUE)
-                        r.setOnClickListener{
-                            if (r.isChecked && !Geopolitica.getInstance().punticos[sc]!!) r.isChecked = false
-                        }
-                        r.setOnLongClickListener{
-                            Toast.makeText(this, sc, Toast.LENGTH_SHORT).show()
-                            false
-                        }
-                        g.addView(r)
-                        punticos[sc] = r
-                    }
-                    R.id.cienc -> Ciencia.getInstance().pregunticas.keys.forEach{ sc ->
-                        val r = RadioButton(this)
-                        r.buttonTintList = ColorStateList.valueOf(Color.GREEN)
-                        r.setOnClickListener{
-                            if (r.isChecked && !Ciencia.getInstance().punticos[sc]!!) r.isChecked = false
-                        }
-                        r.setOnLongClickListener{
-                            Toast.makeText(this, sc, Toast.LENGTH_SHORT).show()
-                            false
-                        }
-                        g.addView(r)
-                        punticos[sc] = r
-                    }
-                    R.id.entr -> Entretenimiento.getInstance().pregunticas.keys.forEach{ sc ->
-                        val r = RadioButton(this)
-                        r.buttonTintList = ColorStateList.valueOf(Color.MAGENTA)
-                        r.setOnClickListener{
-                            if (r.isChecked && !Entretenimiento.getInstance().punticos[sc]!!) r.isChecked = false
-                        }
-                        r.setOnLongClickListener{
-                            Toast.makeText(this, sc, Toast.LENGTH_SHORT).show()
-                          false
-                        }
-                        g.addView(r)
-                        punticos[sc] = r
-                    }
+                    R.id.geop -> radioCategoria("Geopolitica",R.id.geop)
+                    R.id.cienc -> radioCategoria("Ciencia",R.id.cienc)
+                    R.id.entr -> radioCategoria("Entretenimiento",R.id.entr)
                 }
             }
         }
@@ -102,7 +66,22 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
             }
         }
     }
-
+    private fun radioCategoria(pCategoria: String, pGrid : Int) {
+        val c = partida.getCategoria(pCategoria)
+        c.pregunticas.keys.forEach { sc ->
+            val r = RadioButton(this)
+            r.buttonTintList = ColorStateList.valueOf(c.color)
+            r.setOnClickListener {
+                if (r.isChecked && !c.punticos[sc]!!) r.isChecked = false
+            }
+            r.setOnLongClickListener {
+                Toast.makeText(this, sc, Toast.LENGTH_SHORT).show()
+                false
+            }
+            findViewById<GridLayout>(pGrid).addView(r)
+            punticos[sc] = r
+        }
+    }
     override fun propertyChange(p0: PropertyChangeEvent?) {
         if (p0?.propertyName.equals("fin")){
             this.punticos.values.forEach{
@@ -132,7 +111,6 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
 
     override fun onBackPressed() {
         super.onBackPressed()
-        startActivity(Intent(this, MainActivity::class.java))
         finish()
     }
 }

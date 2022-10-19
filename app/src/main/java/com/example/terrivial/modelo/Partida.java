@@ -1,7 +1,6 @@
 package com.example.terrivial.modelo;
 
 import android.content.Context;
-import android.util.Log;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
@@ -55,8 +54,9 @@ public class Partida {
        categorias.forEach(c -> c.llenarMapa(cc));
     }
     public void actualizarPregunta(String c){
-        this.categoriaActual = categorias.stream().filter(cc -> cc.getNombre().equalsIgnoreCase(c)).findAny().get();
-       this.preguntaActual = categoriaActual.preguntaRandom();
+        this.categoriaActual = categorias.stream().filter(cc -> cc.getNombre().equalsIgnoreCase(c)).findAny().orElse(null);
+       if(categoriaActual !=null)
+        this.preguntaActual = categoriaActual.preguntaRandom();
     }
     public Pregunta getPreguntaActual(){
         return this.preguntaActual;
@@ -67,5 +67,9 @@ public class Partida {
         if(this.puntos==10) {
             finalizada = true;
         }
+
+    }
+    public Categoria getCategoria(String pCateg){
+        return categorias.stream().filter(c -> c.getNombre().equalsIgnoreCase(pCateg)).findAny().orElse(null);
     }
 }
