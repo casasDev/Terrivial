@@ -1,0 +1,150 @@
+Geopolitics,Which one of these was not a beach landing site in the Invasion of Normandy?,Silver,Gold,Juno,Sword
+Geopolitics,King Henry VIII was the second monarch of which European royal house?,Tudor,York,Stuart,Lancaster
+Geopolitics,What was William Frederick Cody better known as?,Buffalo Bill,Billy the Kid,Wild Bill Hickok,Pawnee Bill
+Geopolitics,Which German field marshal was known as the `Desert Fox`?,Erwin Rommel,Ernst Busch,Wolfram Freiherr von Richthofen,Wilhelm List
+Geopolitics,Who discovered Penicillin?,Alexander Flemming,Marie Curie,Alfred Nobel,Louis Pasteur
+Geopolitics,How many manned moon landings have there been?,6,1,3,7
+Geopolitics,The idea of Socialism was articulated and advanced by whom?,Karl Marx,Vladimir Lenin,Joseph Stalin,Vladimir Putin
+Geopolitics,In what year did the Wall Street Crash take place?,1929,1932,1930,1925
+Geopolitics,Which one of these tanks was designed and operated by the United Kingdom?,Tog II,M4 Sherman,Tiger H1,T-34
+Geopolitics,"During WWII in 1945 the United States dropped atomic bombs on the two Japanese cities of Hiroshima and what other city?",Nagasaki,Kawasaki,Tokyo,Kagoshima
+Geopolitics,Which of the following African countries was most successful in resisting colonization?,Ethiopia,C&ocirc;te d&rsquo;Ivoire,Congo,Namibia
+Geopolitics,Which of the following ancient peoples was NOT classified as Hellenic (Greek)?,Illyrians,Dorians,Achaeans,Ionians
+Geopolitics,"Which famous world leader is famed for the saying: 'Let them eat cake' yet is rumored that he/she never said it at all?",Marie Antoinette,Czar Nicholas II,Elizabeth I,Henry VIII
+Geopolitics,The original Roman alphabet lacked the following letters EXCEPT:,X,W,U,J
+Geopolitics,Which of these countries remained neutral during World War II?,Switzerland,United Kingdom,France,Italy
+Geopolitics,What was Manfred von Richthofen's nickname?,The Red Baron,The High Flying Ace,The Blue Serpent ,The Germany Gunner
+Geopolitics,Which modern day country is the region that was known as Phrygia in ancient times?,Turkey,Syria,Greece,Egypt
+Geopolitics,In which year did the Invasion of Kuwait by Iraq occur?,1990,1992,1988,1986
+Geopolitics,When did the Battle of the Somme begin?,"July 1st, 1916""August 1st, 1916""July 2nd, 1916""June 30th, 1916"
+Geopolitics,Who was the first president of the United States?,George Washington,James Madison,Thomas Jefferson,James K. Polk
+Geopolitics,"In 1720 England was in massive debt and became in involved in the South Sea Bubble. Who was the main mastermind behind it?",John Blunt,Daniel Defoe,Robert Harley,John Churchill
+Geopolitics,When was Google founded?,"September 4, 1998","October 9, 1997","December 12, 1989","Feburary 7th, 2000"
+Geopolitics,Who was the Prime Minister of Japan when Japan declared war on the US?,Hideki Tojo,Michinomiya Hirohito,Isoroku Yamamoto,Fumimaro Konoe
+Geopolitics,What was the first sport to have been played on the moon?,Golf,Football,Tennis,Soccer
+Geopolitics,Who was the first prime minister of Canada?,John Macdonald,John Abbott,Alexander Mackenzie,Robert Borden
+Geopolitics,How was Socrates executed?,Poison,Decapitation,Firing squad,Crucifixion 
+Geopolitics,How long did World War II last?,6 years,4 years,5 years,7 years
+Geopolitics,Which of the following countries was not an axis power during World War II?, Soviet Union,Italy,Germany,Japan
+Geopolitics,"In 1939 Britain and France declared war on Germany after it invaded which country?",Poland,Czechoslovakia,Austria,Hungary
+Geopolitics,The 'Trail of Tears' was a result of which United States President's Indian Removal Policy?,Andrew Jackson,Harry S. Truman,Martin Van Buren,John Quincy Adams
+Geopolitics,"Who was among those killed in the 2010 Smolensk Russia plane crash tragedy?",The Polish President,Pope John Paul II,Bang-Ding Ow,Albert Putin
+Geopolitics,These two countries held a commonwealth from the 16th to 18th century.,Poland and Lithuania,Hutu and Rwanda,North Korea and South Korea,Bangladesh and Bhutan
+Geopolitics,What year did World War I begin?,1914,1905,1919,1925
+Geopolitics,How old was Adolf Hitler when he died?,56,43,65,47
+Geopolitics,Which modern country is known as 'The Graveyard of Empires'?,Afghanistan,China,Iraq,Russia
+Geopolitics,Which country was Josef Stalin born in?,Georgia,Russia,Germany,Poland
+Geopolitics,Who led the Communist Revolution of Russia?,Vladimir Lenin,Joseph Stalin,Vladimir Putin,Mikhail Gorbachev
+Geopolitics,Which of the following was Brazil was a former colony under?,Portugal,Spain,The Netherlands,France
+Geopolitics,What is the historical name of Sri Lanka?,Ceylon,Myanmar,Colombo,Badulla
+Geopolitics,"In 1453 which important city fell?",Constantinople,Rome,Hamburg,Athens
+Geopolitics,What was the name commonly given to the ancient trade routes that connected the East and West of Eurasia?,Silk Road,Spice Road,Clay Road,Salt Road
+Geopolitics,On what street did the 1666 Great Fire of London start?,Pudding Lane,Baker Street,Houses of Parliament,St Paul&#039;s Cathedral
+Geopolitics,In what year was the M1911 pistol designed?,1911,1907,1899,1917
+Geopolitics,"In what year did the Great Northern War between Russia and Sweden end?",1721,1726,1727,1724
+Geopolitics,What does the United States of America celebrate during the 4th of July?,The signing of the Declaration of Independence,The anniversary of the Battle of Gettysburg,The crossing of the Delaware River,The ratification of the Constitution
+Geopolitics,Who rode on horseback to warn the Minutemen that the British were coming during the U.S. Revolutionary War?,Paul Revere,Thomas Paine,Henry Longfellow,Nathan Hale
+Geopolitics,Abolitionist John Brown raided the arsenal in which Virginia Town?,Harper&#039;s Ferry,Richmond,Harrisonburg,Martinsburg
+Geopolitics,The Ottoman Empire was dissolved after their loss in which war?,World War I,Crimean War,Serbian Revolution,Second Balkan War
+Geopolitics,"Which famous military commander marched an army; which included war elephants; over the Alps during the Second Punic War?",Hannibal,Garmanicus,Alexander the Great,Tiberius
+Geopolitics,Who was the first American in space?,Alan Shephard,Neil Armstrong,John Glenn,Jim Lovell
+Geopolitics,What event marked the start of World War II?,Invasion of Poland (1939),Invasion of Russia (1942),Battle of Britain (1940),Invasion of Normandy (1944)
+Geopolitics,Which of these countries was sea charted in 1500 by the Portuguese maritime explorations?,Brazil,India,Mozambique,Madagascar
+Geopolitics,During what war did the 'Cuban Missile Crisis' occur?,Cold War,World War I,World War II,Revolutionary War
+Geopolitics,Which king was killed at the Battle of Bosworth Field in 1485? ,Richard III,Edward V,Henry VII,James I
+Geopolitics," What Russian automatic gas-operated assault rifle was developed in the Soviet Union in 1947 and is still popularly used today?",AK-47,RPK,M16,MG 42
+Geopolitics,Joseph Smith was the founder of what religion?,Mormonism,Buddhism,Christianity,Hinduism
+Geopolitics,What historical event was Tchaikovsky's 1812 Overture referencing?,The Napoleonic Wars,The American War of 1812,The Russian Revolution,The Charge of the Light Brigade (Crimean War)
+Geopolitics,America's Strategic Defense System during the Cold War was nicknamed after this famous movie.,Star Wars,Jaws,Blade Runner,Alien
+Geopolitics,In what year was the famous 45 foot tall Hollywood sign first erected?,1923,1903,1913,1933
+Geopolitics,The crown of the Empire State Building was originally built for what purpose?,Airship Dock,Lightning Rod,Antennae,Flag Pole
+Geopolitics,Who was the Prime Minister of the United Kingdom for most of World War II?,Winston Churchill,Neville Chamberlain,Harold Macmillan,Edward Heath
+Geopolitics,Which country had an 'Orange Revolution' between 2004 and 2005?,Ukraine,Belarus,Latvia,Lithuania
+Geopolitics,All of the following are names of the Seven Warring States EXCEPT:,Zhai (翟),Zhao (趙),Qin (秦),Qi (齊)
+Geopolitics,"According to scholarly estimates; what percentage of the world population at the time died due to Tamerlane's conquests?",5%,1%,3%,&lt;1%
+Geopolitics,How old was Lyndon B. Johnson when he assumed the role of President of the United States?,55,50,60,54
+Geopolitics,What is the name of the US Navy spy ship which was attacked and captured by North Korean forces in 1968?,USS Pueblo,USS North Carolina,USS Constitution,USS Indianapolis
+Geopolitics,"In the War of the Pacific (1879 - 1883) Bolivia lost its access to the Pacific Ocean after being defeated by which South American country?",Chile,Peru,Brazil,Argentina
+Geopolitics,Adolf Hitler was born on which date?,"April 20, 1889""June 12, 1889""February 6, 1889""April 16, 1889"
+Geopolitics,What year did the Boxing Day earthquake &amp; tsunami occur in the Indian Ocean?,2004,2006,2008,2002
+Geopolitics,Against which country did the Dutch Republic fight the Eighty Years' War?,Spain,France,England,Portugal
+Geopolitics,"What is the bloodiest event in United States history in terms of casualties?",Battle of Antietam,Pearl Harbor,September 11th,D-Day
+Geopolitics,"What was the transfer of disease crops and people across the Atlantic shortly after the discovery of the Americas called?",The Columbian Exchange,Triangle Trade,Transatlantic Slave Trade,The Silk Road
+Geopolitics,"Which building was set aflame on August 24th of 1812?",The White House,Parliament Building,Grand National Assembly Building,Palace of the Nation
+Geopolitics,What was Genghis Khan's real name?,Tem&uuml;jin,M&ouml;ngke,&Ouml;gedei,Tem&uuml;r
+Geopolitics,What was the bloodiest single-day battle during the American Civil War?,The Battle of Antietam,The Siege of Vicksburg,The Battle of Gettysburg,The Battles of Chancellorsville
+Geopolitics,Who was the first president born in the independent United States?,Martin Van Buren,John Adams,George Washington,James Monroe 
+Geopolitics,What was the unofficial name for Germany between 1919 and 1933?,Weimar Republic,German Democratic Republic,Federal Republic of Germany,Oesterreich 
+Geopolitics,Who was the leader of the Communist Party of Yugoslavia ?,Josip Broz Tito,Karadjordje Petrovic,Milos Obilic,Aleskandar Petrovic
+Geopolitics,"The Fallingwater House located in Pennsylvania; was designed by which architect?",Frank Lloyd Wright,Antoni Gaudi,Frank Gehry,Le Corbusier
+Geopolitics,Which Las Vegas casino was originally constructed and operated by mobster Bugsy Siegel?,The Flamingo,The MGM Grand,The Sands,The Sahara
+Geopolitics,In which year was Constantinople conquered by the Turks?,1453,1435,1454,1440
+Geopolitics,In which years did the Battle of Gallipoli take place?,1915 - 1916,1914 - 1918,1914 - 1915,1915 - 1918
+Geopolitics,The United States Army Air Corps became the United States Air Force on what date?,"September 18, 1947","December 14, 1946","October 27, 1945","November 08, 1944"
+Geopolitics,"In World War I; what was the name of the alliance of Germany Austria-Hungary the Ottoman Empire and Bulgaria?",The Central Powers,The Axis Powers,The Federation of Empires,Authoritarian Alliance
+Geopolitics,The minigun was designed in 1960 by which manufacturer.,General Electric,Colt Firearms,Heckler &amp; Koch,Sig Sauer
+Geopolitics,Which country gifted the Statue of Liberty to the United States of America?,France,Spain,England,Germany
+Geopolitics,"On which aircraft carrier did the Doolitte Raid launch from on April 18 of 1942 during World War II?",USS Hornet,USS Enterprise,USS Lexington,USS Saratoga
+Geopolitics,When did construction of the Suez Canal finish?,1869,1859,1860,1850
+Geopolitics,The Korean War started in what year?,1950,1945,1960,1912
+Geopolitics,What was the name of the planned invasion of Japan towards the end of World War II?,Operation Downfall,Operation Boarding Party,Operation Ironclad,Operation Aflame
+Geopolitics,Which of the following is not in the Indo-European language family?,Finnish,English,Hindi,Russian
+Geopolitics,Who was the first Chancellor of a united Germany in 1871? ,Otto Von Bismark,Kaiser Wilhelm ,Fredrick the 2nd,Robert Koch
+Geopolitics,When did the Crisis of the Third Century begin?,235 AD,235 BC,242 AD,210 AD
+Geopolitics,During which American Civil War campaign did Union troops dig a tunnel beneath Confederate troops to detonate explosives underneath them?,Siege of Petersburg,Siege of Vicksburg,Antietam Campaign,Gettysburg Campagin
+Geopolitics,Who assassinated Archduke Franz Ferdinand?,Gavrilo Princip,Nedeljko Čabrinović,Oskar Potiorek,Ferdinand Cohen-Blind
+Geopolitics,Which of these founding fathers of the United States of America later became president?,James Monroe,Alexander Hamilton,Samuel Adams,Roger Sherman
+Geopolitics,Which of these facilities was not present on the Titanic?,Fainting room,Turkish bath,Kennel,Squash court
+Geopolitics,The fraudelent doctor John R. Brinkley acummulated great fame and wealth in the early 1900s offering what service?,Goat testicles transplant,Pig blood transfusion,Cow liver transplant,Turkey breast implants
+Geopolitics,Which Nazi General was known as the 'Desert Fox'?,Erwin Rommel,Gerd von Rundstadt,Wilhelm Keitel,Heinz Guderian 
+Geopolitics,"John Moses Browning the designer of the M1918 BAR (Browning Automatic Rifle) was a part of which religion?",Mormon,Catholic,Jewish,Atheist
+Geopolitics,"With which Greek philosopher would you associate the phrase 'I know that I know nothing'?",Socrates,Aristotle,Plato,Pythagoras
+Geopolitics,Pianist Fr&eacute;d&eacute;ric Chopin was a composer of which musical era?,Romantic,Classic,Baroque,Renaissance
+Geopolitics,Spain was formed in 1469 with the marriage of Isabella I of Castile and Ferdinand II of what other Iberian kingdom?,Aragon,Galicia,Le&oacute;n,Navarre
+Geopolitics,What was the name of the spy ring that helped the United States win the Revolutionary War?,Culper Ring,New York Spy Ring,Washington&#039;s Spies,Unnamed
+Geopolitics,When did Spanish Peninsular War start?,1808,1806,1810,1809
+Geopolitics,What year was Canada founded in?,1867,1798,1859,1668
+Geopolitics,List the following Iranic empires in chronological order:,"Median, Achaemenid, Parthian, Sassanid","Median, Achaemenid, Sassanid, Parthian""Achaemenid, Median, Parthian, Sassanid","Achaemenid, Median, Sassanid, Parthian"
+Geopolitics,What age was King Henry V when he died?,35,62,87,73
+Geopolitics,On which day did ARPANET suffer a 4 hour long network crash?,"October 27, 1980","November 21, 1969","October 29, 1969","December 9, 1991"
+Geopolitics,When did Canada leave the confederation to become their own nation?,"July 1st, 1867","July 1st, 1763","July 1st, 1832","July 1st, 1902"
+Geopolitics,When was Adolf Hitler appointed as Chancellor of Germany?,"January 30, 1933","September 1, 1939""February 27, 1933","October 6, 1939"
+Geopolitics,Which one of these rulers did not belong to the Habsburg dynasty?,Philip V,Charles V,Philip II,Francis Joseph
+Geopolitics,"During the Roman Triumvirate of 42 BCE what region of the Roman Republic was given to Lepidus?",Hispania ,Italia,Gallia,Asia
+Geopolitics,The Second Boer War in 1899 was fought where?,South Africa,Argentina,Nepal,Bulgaria
+Geopolitics,In which year did the Tokyo Subway Sarin Attack occur?,1995,2001,2011,1991
+Geopolitics,What was the real name of the Albanian national leader Skanderbeg?,Gjergj Kastrioti,Diturak Zhulati,Iskander Bejko,Mirash Krasniki
+Geopolitics,What year was the United States Declaration of Independence signed?,1776,1775,1774,1777
+Geopolitics,When did Lithuania declare independence from the Soviet Union?,"March 11th, 1990","December 25th, 1991","December 5th, 1991","April 20th, 1989"
+Geopolitics,What was Napoleon Bonaparte's name before he changed it?,Napoleone di Buonaparte,Naapolion van Bonijpaart,Napole&atilde;o do Boaparte,Napoleona de Buenoparte
+Geopolitics,The Hagia Sophia was commissioned by which emperor of the Byzantine Empire?,Justinian I,Constantine IV,Arcadius,Theodosius the Great
+Geopolitics,"During the Spanish Civil War (1936) Francisco Franco fought for which political faction?",Nationalist Spain,Republican Spain,Popular Front,Papal State
+Geopolitics,What was found in 1946 by two young shepards near a cave?,Dead Sea Scrolls,The Blackbeard Chest,Sheep,The First Oaxaca Cave Sleeper
+Geopolitics,The Battle of Hastings was fought in which year?,1066,911,1204,1420
+Geopolitics,"When was the city of Rome of Italy founded?",753 BCE,902 BCE,524 BCE,697 BCE
+Geopolitics,"What was the code name for the Allied invasion of Southern France on August 15th of 1944?",Operation Dragoon,Operation Overlord,Operation Market Garden,Operation Torch
+Geopolitics,What was the aim of the 'Umbrella Revolution' in Hong Kong in 2014?,Genuine universal suffrage,Gaining Independence,Go back under British Rule,Lower taxes
+Geopolitics,What was the original name of New York City?,New Amsterdam,New London,New Paris,New Rome
+Geopolitics,What was the name of the German offensive operation in October 1941 to take Moscow before winter?,Operation Typhoon,Operation Sunflower,Operation Barbarossa,Case Blue
+Geopolitics,When was the 'Siege of Leningrad' lifted during World War II?,January 1944,September 1943,November 1943,March 1944
+Geopolitics,Which of the following was not one of Joseph Stalin's ten blows during World War II?,Vistula-Oder Offensive,Crimean Offensive,Leningrad-Novgorod Offensive,Operation Bagration
+Geopolitics,Which day did World War I begin?,July 28,January 28,June 28,April 28
+Geopolitics,What did the abbreviation 'RMS' stand for in the RMS Titanic in 1912?,Royal Mail Ship,Royal Majesty Service,Regular Maritime Schedule ,Regulated Maelstrom Sensor
+Geopolitics,What was the last colony the UK ceded marking the end of the British Empire?,Hong Kong,India,Australia,Ireland
+Geopolitics,"In addition to his career as an astrologer and 'prophet' Nostradamus published a 1555 treatise that included a section on what?",Making jams and jellies,Teaching parrots to talk,Cheating at card games,Digging graves
+Geopolitics,"Before the American colonies switched to the Gregorian calendar in 1752; on what date did their new year start?",March 25th,June 1st,September 25th,December 1st
+Geopolitics,"From 1940 to 1942 what was the capital-in-exile of Free France ?",Brazzaville,Algiers,Paris,Tunis
+Geopolitics,The ancient city of Chich&eacute;n Itz&aacute; was built by which civilization?,Mayans,Aztecs,Incas,Toltecs
+Geopolitics,Which countries participated in the Lobster War?,France and Brazil,Canada and Norway,Australia and New Zealand,United States and England
+Geopolitics,Who assassinated President James A. Garfield?,Charles Guiteau,Sirhan Sirhan,Leon Czolgosz,John Wilkes Booth
+Geopolitics,"During World War I which nation's monarchs were blood related?","England, Germany, Russia","France, Russia, Germany","Serbia, Russia, Croatia","Germany, Spain, Austria"
+Geopolitics,The Bohemian Revolt (1618-1620) started after Protestants in Prague did what to their Catholic Lords Regents?,Threw them out of a window,Insulted their mothers,Locked them in stockades,Hung them.
+Geopolitics,"After the 1516 Battle of Marj Dabiq the Ottoman Empire took control of Jerusalem from which sultanate?",Mamluk,Ayyubid,Ummayyad,Seljuq
+Geopolitics,The son of which pope supposedly held a lecherous f&ecirc;te involving 50 courtesans in the papal palace?,Alexander VI,Innocent V,Urban II,Pius III
+Geopolitics,"The coat of arms of the King of Spain contains the arms from the monarchs of Castille Leon Aragon and which other former Iberian kingdom?",Navarre,Galicia,Granada,Catalonia
+Geopolitics,Which of the following physicists did NOT work on the Manhattan project?,Murray Gell-Mann,Richard Feynman,J. Robert Oppenheimer,John Von-Neumann
+Geopolitics,Which is the hull NO. of the Fletcher class destroyer Fletcher?,DD-445,DD-992,DD-444,DD-446
+Geopolitics,Which of these positions did the astronomer and physicist Isaac Newton not hold?,Surveyor to the City of London,Professor of Mathematics,Warden of the Royal Mint,Member of Parliament
+Geopolitics,"Which country did the Eureka Rebellion an 1856 battle against colonial rule take place in?",Australia,India,Canada,Brazil
+Geopolitics,"Who is the creator of the soft drink Dr. Pepper?",Charles Alderton,James Wellington,Johnson Hinsin,Boris Heviltik
+Geopolitics,What is the name of the Boeing B-29 that dropped the 'Little Boy' atomic bomb on Hiroshima?,Enola Gay,Necessary Evil,The Great Artiste,Full House

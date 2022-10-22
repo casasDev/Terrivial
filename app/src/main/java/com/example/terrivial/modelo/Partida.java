@@ -64,7 +64,7 @@ public class Partida {
     public void anadirPuntos(int p){
         this.puntos += p;
         this.p.firePropertyChange("puntacos", "PUNTOS: "+this.puntos,false);
-        if(this.puntos==10) {
+        if(this.puntos==this.categorias.stream().mapToInt(c -> c.getPregunticas().keySet().size()).sum()) {
             finalizada = true;
         }
 

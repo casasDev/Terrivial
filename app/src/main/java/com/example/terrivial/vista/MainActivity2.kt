@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.os.Bundle
+import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.view.animation.Animation
@@ -72,6 +73,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
             val r = RadioButton(this)
             r.buttonTintList = ColorStateList.valueOf(c.color)
             r.setOnClickListener {
+                Log.d("OYEE", c.pregunticas["Historia"].toString())
                 if (r.isChecked && !c.punticos[sc]!!) r.isChecked = false
             }
             r.setOnLongClickListener {
