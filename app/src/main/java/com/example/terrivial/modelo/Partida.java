@@ -66,6 +66,7 @@ public class Partida {
         this.p.firePropertyChange("puntacos", "PUNTOS: "+this.puntos,false);
         if(this.puntos==this.categorias.stream().mapToInt(c -> c.getPregunticas().keySet().size()).sum()) {
             finalizada = true;
+            this.puntos =0;
         }
 
     }

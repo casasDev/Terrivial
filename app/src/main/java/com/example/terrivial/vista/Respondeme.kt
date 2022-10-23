@@ -1,6 +1,7 @@
 package com.example.terrivial.vista
 
 import android.annotation.SuppressLint
+import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
 import android.view.MotionEvent
@@ -43,7 +44,6 @@ class Respondeme : AppCompatActivity() {
             }
         }
         respuestas.forEach{
-
                 r ->
             YoYo.with(Techniques.RotateInUpLeft).duration(500).playOn(r)
             r.setOnClickListener{

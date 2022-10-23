@@ -8,7 +8,7 @@ Geopolitics,The idea of Socialism was articulated and advanced by whom?,Karl Mar
 Geopolitics,In what year did the Wall Street Crash take place?,1929,1932,1930,1925
 Geopolitics,Which one of these tanks was designed and operated by the United Kingdom?,Tog II,M4 Sherman,Tiger H1,T-34
 Geopolitics,During WWII; in 1945; the United States dropped atomic bombs on the two Japanese cities of Hiroshima and what other city?,Nagasaki,Kawasaki,Tokyo,Kagoshima
-Geopolitics,Which of the following African countries was most successful in resisting colonization?,Ethiopia,C&ocirc;te d&rsquo;Ivoire,Congo,Namibia
+Geopolitics,Which of the following African countries was most successful in resisting colonization?,Ethiopia,Côte d'Ivoire,Congo,Namibia
 Geopolitics,Which of the following ancient peoples was NOT classified as Hellenic (Greek)?,Illyrians,Dorians,Achaeans,Ionians
 Geopolitics,The original Roman alphabet lacked the following letters EXCEPT:,X,W,U,J
 Geopolitics,Which of these countries remained neutral during World War II?,Switzerland,United Kingdom,France,Italy
@@ -39,12 +39,12 @@ Geopolitics,Which of the following was Brazil was a former colony under?,Portuga
 Geopolitics,What is the historical name of Sri Lanka?,Ceylon,Myanmar,Colombo,Badulla
 Geopolitics,In 1453; which important city fell?,Constantinople,Rome,Hamburg,Athens
 Geopolitics,What was the name commonly given to the ancient trade routes that connected the East and West of Eurasia?,Silk Road,Spice Road,Clay Road,Salt Road
-Geopolitics,On what street did the 1666 Great Fire of London start?,Pudding Lane,Baker Street,Houses of Parliament,St Paul';s Cathedral
+Geopolitics,On what street did the 1666 Great Fire of London start?,Pudding Lane,Baker Street,Houses of Parliament,St Paul's Cathedral
 Geopolitics,In what year was the M1911 pistol designed?,1911,1907,1899,1917
 Geopolitics,In what year did the Great Northern War; between Russia and Sweden; end?,1721,1726,1727,1724
 Geopolitics,What does the United States of America celebrate during the 4th of July?,The signing of the Declaration of Independence,The anniversary of the Battle of Gettysburg,The crossing of the Delaware River,The ratification of the Constitution
 Geopolitics,Who rode on horseback to warn the Minutemen that the British were coming during the U.S. Revolutionary War?,Paul Revere,Thomas Paine,Henry Longfellow,Nathan Hale
-Geopolitics,Abolitionist John Brown raided the arsenal in which Virginia Town?,Harper';s Ferry,Richmond,Harrisonburg,Martinsburg
+Geopolitics,Abolitionist John Brown raided the arsenal in which Virginia Town?,Harper's Ferry,Richmond,Harrisonburg,Martinsburg
 Geopolitics,The Ottoman Empire was dissolved after their loss in which war?,World War I,Crimean War,Serbian Revolution,Second Balkan War
 Geopolitics,Which famous military commander marched an army; which included war elephants; over the Alps during the Second Punic War?,Hannibal,Garmanicus,Alexander the Great,Tiberius
 Geopolitics,Who was the first American in space?,Alan Shephard,Neil Armstrong,John Glenn,Jim Lovell
@@ -63,7 +63,7 @@ Geopolitics,The Battle of the Somme in World War I took place in which country?,
 Geopolitics,When did Jamaica recieve its independence from England? ,1962,1492,1963,1987
 Geopolitics,The Herero genocide was perpetrated in Africa by which of the following colonial nations?,Germany,Britain,Belgium,France
 Geopolitics,One of the deadliest pandemics; the Spanish Flu; killed off what percentage of the human world population at the time?,3 to 6 percent,6 to 10 percent,1 to 3 percent,less than 1 percent
-Geopolitics,According to scholarly estimates; what percentage of the world population at the time died due to Tamerlane's conquests?,5%,1%,3%,&lt;1%
+Geopolitics,According to scholarly estimates; what percentage of the world population at the time died due to Tamerlane's conquests?,5%,1%,3%,>1%
 Geopolitics,On which day did the attempted coup d'etat of 1991 in the Soviet Union begin?,August 19,August 21,December 26,December 24
 Geopolitics,On which day did construction start on The Pentagon; the headquarters for the United States Department of Defense?,September 11; 1941,June 15; 1947,January 15; 1943,September 2; 1962
 Geopolitics,How old was Lyndon B. Johnson when he assumed the role of President of the United States?,55,50,60,54
@@ -73,7 +73,7 @@ Geopolitics,In what year did the North American Video Game Crash occur?,1983,198
 Geopolitics,What year were the Marian Reforms instituted in the Roman Republic?,107 BCE,42 BCE,264 BCE,102 CE
 Geopolitics,Who tutored Alexander the Great?,Aristotle,Socrates,Plato,King Philip
 Geopolitics,Joseph Stalin had a criminal past doing what?,Robbing Trains,Murder for Hire,Tax Evasion,Identity Fraud
-Geopolitics,What year did the Boxing Day earthquake &amp tsunami occur in the Indian Ocean?,2004,2006,2008,2002
+Geopolitics,What year did the Boxing Day earthquake & tsunami occur in the Indian Ocean?,2004,2006,2008,2002
 Geopolitics,Against which country did the Dutch Republic fight the Eighty Years' War?,Spain,France,England,Portugal
 Geopolitics,What were the first states to break away from Yugoslavia?,Slovenia; Croatia,Macedonia; Montenegro,Slovenia; Macedonia,Montenegro; Slovenia
 Geopolitics,Which American civilization is the source of the belief that the world would end or drastically change on December 21st; 2012?,The Mayans,The Incas,The Aztecs,The Navajos
@@ -82,12 +82,12 @@ Geopolitics,When did Norway become free from Sweden?,1905,1925,1814,1834
 Geopolitics,Which historical conflict killed the most people?,World War II,Taiping Rebellion,Three Kingdoms War,Mongol conquests
 Geopolitics,In what year did the First World War end?,1918,1914,1916,1912
 Geopolitics,What was the total length of the Titanic?,882 ft | 268.8 m,759 ft | 231.3 m,1042 ft | 317.6 m,825 ft | 251.5 m
-Geopolitics,What was the name of one of the surviving palaces of Henry VIII located near Richmond; London?,Hampton Court,St James';s Palace,Buckingham Palace,Coughton Court
+Geopolitics,What was the name of one of the surviving palaces of Henry VIII located near Richmond; London?,Hampton Court,St James's Palace,Buckingham Palace,Coughton Court
 Geopolitics,In which year was Constantinople conquered by the Turks?,1453,1435,1454,1440
 Geopolitics,The United States Army Air Corps became the United States Air Force on what date?,September 18; 1947,December 14; 1946,October 27; 1945,November 08; 1944
 Geopolitics,In what year did Kentucky become the 15th state to join the union?,1792,1782,1798,1788
 Geopolitics,Which of the following countries was the first to send an object into space?,Germany,USA,Russia,China
-Geopolitics,The minigun was designed in 1960 by which manufacturer.,General Electric,Colt Firearms,Heckler &amp; Koch,Sig Sauer
+Geopolitics,The minigun was designed in 1960 by which manufacturer.,General Electric,Colt Firearms,Heckler & Koch,Sig Sauer
 Geopolitics,When did construction of the Suez Canal finish?,1869,1859,1860,1850
 Geopolitics,When was the Grand Patriotic War in the USSR concluded?,May 9th; 1945,September 2nd; 1945,August 9th; 1945,December 11th; 1945
 Geopolitics,Which of the following Presidents of the United States was assassinated?,William McKinley,Lyndon Johnson,Chester Arthur,Franklin Roosevelt
@@ -101,7 +101,7 @@ Geopolitics,The fraudelent doctor John R. Brinkley acummulated great fame and we
 Geopolitics,With which Greek philosopher would you associate the phrase; I know that I know nothing?,Socrates,Aristotle,Plato,Pythagoras
 Geopolitics,Which naval battle was considered the turning point of the Pacific Ocean Theater during World War 2?,Battle of Midway,Attack on Truk Island,Attack on Pearl Harbor,Battle of the Coral Sea
 Geopolitics,In the year 1900; what were the most popular first names given to boy and girl babies born in the United States?,John and Mary,Joseph and Catherine,William and Elizabeth,George and Anne
-Geopolitics,Spain was formed in 1469 with the marriage of Isabella I of Castile and Ferdinand II of what other Iberian kingdom?,Aragon,Galicia,Le&oacute;n,Navarre
+Geopolitics,Spain was formed in 1469 with the marriage of Isabella I of Castile and Ferdinand II of what other Iberian kingdom?,Aragon,Galicia,León,Navarre
 Geopolitics,When did Spanish Peninsular War start?,1808,1806,1810,1809
 Geopolitics,What year was Canada founded in?,1867,1798,1859,1668
 Geopolitics,What age was King Henry V when he died?,35,62,87,73
@@ -113,7 +113,7 @@ Geopolitics,During the Roman Triumvirate of 42 BCE; what region of the Roman Rep
 Geopolitics,What was the real name of the Albanian national leader Skanderbeg?,Gjergj Kastrioti,Diturak Zhulati,Iskander Bejko,Mirash Krasniki
 Geopolitics,What year was the United States Declaration of Independence signed?,1776,1775,1774,1777
 Geopolitics,When did Lithuania declare independence from the Soviet Union?,March 11th; 1990,December 25th; 1991,December 5th; 1991,April 20th; 1989
-Geopolitics,What was Napoleon Bonaparte's name before he changed it?,Napoleone di Buonaparte,Naapolion van Bonijpaart,Napole&atilde;o do Boaparte,Napoleona de Buenoparte
+Geopolitics,What was Napoleon Bonaparte's name before he changed it?,Napoleone di Buonaparte,Naapolion van Bonijpaart,Napoleão do Boaparte,Napoleona de Buenoparte
 Geopolitics,The Hagia Sophia was commissioned by which emperor of the Byzantine Empire?,Justinian I,Constantine IV,Arcadius,Theodosius the Great
 Geopolitics,During the Spanish Civil War (1936); Francisco Franco fought for which political faction?,Nationalist Spain,Republican Spain,Popular Front,Papal State
 Geopolitics,Who was the President of the United States during the signing of the Gadsden Purchase?,Franklin Pierce,Andrew Johnson,Abraham Lincoln,James Polk
@@ -131,7 +131,7 @@ Geopolitics,What did the abbreviation RMS stand for in the RMS Titanic in 1912?,
 Geopolitics,In addition to his career as an astrologer and prophet; Nostradamus published a 1555 treatise that included a section on what?,Making jams and jellies,Teaching parrots to talk,Cheating at card games,Digging graves
 Geopolitics,Before the American colonies switched to the Gregorian calendar in 1752; on what date did their new year start?,March 25th,June 1st,September 25th,December 1st
 Geopolitics,From 1940 to 1942; what was the capital-in-exile of Free France ?,Brazzaville,Algiers,Paris,Tunis
-Geopolitics,The ancient city of Chich&eacuten Itz&aacute was built by which civilization?,Mayans,Aztecs,Incas,Toltecs
+Geopolitics,The ancient city of Chichèn Itzà was built by which civilization?,Mayans,Aztecs,Incas,Toltecs
 Geopolitics,Which English king was married to Eleanor of Aquitaine?,Henry II,Richard I,Henry I,Henry V
 Geopolitics,Which countries participated in the Lobster War?,France and Brazil,Canada and Norway,Australia and New Zealand,United States and England
 Geopolitics,Who was the first man to travel into outer space twice?,Gus Grissom,Vladimir Komarov,Charles Conrad,Yuri Gagarin
@@ -140,7 +140,7 @@ Geopolitics,During World War I; which nation's monarchs were blood related?,Engl
 Geopolitics,Which U.S. president was said to have been too honest to lie to his father about chopping down a cherry tree?,George Washington,Abraham Lincoln,Thomas Jefferson,James Monroe
 Geopolitics,The Bohemian Revolt (1618-1620) started after Protestants in Prague did what to their Catholic Lords Regents?,Threw them out of a window,Insulted their mothers,Locked them in stockades,Hung them.
 Geopolitics,Which of the following Physicists aided Nazi Germany in their production of a nuclear weapon?,Werner Heisenberg,John von Neumann,Albert Einstein,Max Planck
-Geopolitics,The son of which pope supposedly held a lecherous f&ecircte involving 50 courtesans in the papal palace?,Alexander VI,Innocent V,Urban II,Pius III
+Geopolitics,The son of which pope supposedly held a lecherous fête involving 50 courtesans in the papal palace?,Alexander VI,Innocent V,Urban II,Pius III
 Geopolitics,The coat of arms of the King of Spain contains the arms from the monarchs of Castille; Leon; Aragon and which other former Iberian kingdom?,Navarre,Galicia,Granada,Catalonia
 Geopolitics,Which of the following physicists did NOT work on the Manhattan project?,Murray Gell-Mann,Richard Feynman,J. Robert Oppenheimer,John Von-Neumann
 Geopolitics,Which is the hull NO. of the Fletcher class destroyer Fletcher?,DD-445,DD-992,DD-444,DD-446
