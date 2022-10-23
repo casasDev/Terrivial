@@ -23,9 +23,9 @@
         android:layout_alignBottom="@+id/puntos"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginBottom="-156dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="-148dp"
         android:backgroundTint="#003FFF"
         android:text="@string/geopolitica" />
 
@@ -64,7 +64,7 @@
         android:layout_marginStart="46dp"
         android:layout_marginEnd="13dp"
         android:layout_marginBottom="-223dp"
-        app:columnCount="2"
+        app:columnCount="3"
         app:rowCount="1">
 
     </androidx.gridlayout.widget.GridLayout>
