@@ -113,6 +113,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
 
     override fun onBackPressed() {
         super.onBackPressed()
+        partida.anadirPuntos(-Integer.parseInt(this.puntos.text.toString().replace("PUNTOS: ","")))
         finish()
     }
 }
