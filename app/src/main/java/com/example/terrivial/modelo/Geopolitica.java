@@ -9,6 +9,7 @@ public class Geopolitica extends Categoria{
         this.anadirLista("Capitales", null);
         this.anadirLista("Presidentes",null);
         this.anadirLista("Historia",null);
+        this.anadirLista("Cultura general",null);
     }
     public static Geopolitica getInstance(){
         if(mGeopolitica == null) mGeopolitica = new Geopolitica();

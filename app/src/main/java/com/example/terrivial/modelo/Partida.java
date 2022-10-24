@@ -61,6 +61,9 @@ public class Partida {
     public Pregunta getPreguntaActual(){
         return this.preguntaActual;
     }
+    public Categoria getCategoriaActual(){
+        return this.categoriaActual;
+    }
     public void anadirPuntos(int p){
         this.puntos += p;
         this.p.firePropertyChange("puntacos", "PUNTOS: "+this.puntos,false);

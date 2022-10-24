@@ -69,6 +69,8 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
     }
     private fun radioCategoria(pCategoria: String, pGrid : Int) {
         val c = partida.getCategoria(pCategoria)
+        val gl = findViewById<GridLayout>(pGrid)
+        gl.columnCount = c.pregunticas.keys.size
         c.pregunticas.keys.forEach { sc ->
             val r = RadioButton(this)
             r.buttonTintList = ColorStateList.valueOf(c.color)
@@ -80,7 +82,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
                 Toast.makeText(this, sc, Toast.LENGTH_SHORT).show()
                 false
             }
-            findViewById<GridLayout>(pGrid).addView(r)
+            gl.addView(r)
             punticos[sc] = r
         }
     }

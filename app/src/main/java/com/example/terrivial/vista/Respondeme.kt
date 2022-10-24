@@ -8,6 +8,8 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.daimajia.androidanimations.library.Techniques
@@ -22,9 +24,12 @@ class Respondeme : AppCompatActivity() {
     private lateinit var respuestas : List<TextView>
     private lateinit var scaleUp : Animation
     private lateinit var scaleDown : Animation
+    private lateinit var atras : ImageButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.respondeme)
+        atras = findViewById(R.id.atras)
+        atras.background.setTint(partida.categoriaActual.color)
         pregunta = findViewById(R.id.pregunta)
         scaleDown = AnimationUtils.loadAnimation(this,R.anim.scale_down2)
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up2)
@@ -54,14 +59,27 @@ class Respondeme : AppCompatActivity() {
                     it.setOnClickListener(null)
                     it.setOnTouchListener(null)
                 }
+                YoYo.with(Techniques.SlideInLeft).duration(250).playOn(atras)
+                atras.visibility = View.VISIBLE
             }
             r.setOnTouchListener{
                     view : View, event : MotionEvent ->
-                if(event.action == MotionEvent.ACTION_DOWN && view.id == r.id) {
+                if(event.action == MotionEvent.ACTION_DOWN) {
                     r.startAnimation(scaleDown)
                 }
-                else if(event.action == MotionEvent.ACTION_UP && view.id == r.id)
+                else if(event.action == MotionEvent.ACTION_UP)
                     r.startAnimation(scaleUp)
+                false
+            }
+            atras.setOnClickListener{
+                onBackPressed()
+            }
+            atras.setOnTouchListener { view : View, motionEvent : MotionEvent->
+                if(motionEvent.action == MotionEvent.ACTION_DOWN) {
+                   atras.startAnimation(scaleDown)
+                }
+                else if(motionEvent.action == MotionEvent.ACTION_UP)
+                    atras.startAnimation(scaleUp)
                 false
             }
         }

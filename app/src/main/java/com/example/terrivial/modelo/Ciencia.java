@@ -9,6 +9,7 @@ public class Ciencia extends Categoria{
      this.anadirLista("Sumar",null);
      this.anadirLista("Dividir",null);
      this.anadirLista("Multiplicar",null);
+     this.anadirLista("Ciencia general",null);
     }
     public static Ciencia getInstance(){
         if(mCiencia == null) mCiencia = new Ciencia();

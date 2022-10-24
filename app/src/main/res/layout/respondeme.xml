@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -75,5 +76,22 @@
         android:textColor="#000000"
         android:textColorHighlight="#000000"
         android:textAlignment="center"/>
+
+    <ImageButton
+        android:id="@+id/atras"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignStart="@+id/respuesta3"
+        android:layout_alignEnd="@+id/respuesta3"
+        android:layout_alignBottom="@+id/respuesta3"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="605dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="-66dp"
+        android:contentDescription="@string/android_animations_lib_name"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        android:visibility="gone"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 </RelativeLayout>

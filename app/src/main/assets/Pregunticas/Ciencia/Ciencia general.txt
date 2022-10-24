@@ -1,0 +1,150 @@
+Science,What is the largest animal currently on Earth?,Blue Whale,Orca,Colossal Squid,Giraffe
+Science,What does the letter 'S' stand for in 'NASA'?,Space,Science,Society,Star
+Science,The humerus; paired radius; and ulna come together to form what joint?,Elbow,Knee,Sholder,Ankle
+Science,Which is the longest bone in the human body? ,Femur,Scapula,Fibula,Ulna
+Science,In aeronautics; flaps and slats are used to control what on an aircraft?,Lift,Thrust,Drag,Weight 
+Science,Which type of rock is created by intense heat AND pressure?,Metamorphic,Sedimentary,Igneous,Diamond
+Science,This element; when overcome with extreme heat and pressure; creates diamonds.,Carbon,Nitrogen,Oxygen,Hydrogen
+Science,How many planets are in our Solar System?,Eight,Nine,Seven,Ten
+Science,Which of these stars is the largest?,UY Scuti,VY Canis Majoris,Betelgeuse,RW Cephei
+Science,What is the hottest planet in the Solar System?,Venus,Mars,Mercury,Jupiter
+Science,What was the first living creature in space?,Fruit Flies ,Monkey,Dog,Mouse
+Science,What common name is given to the medial condition; tibial stress syndrome (MTSS)?,Shin Splints,Tennis Elbow,Carpal Tunnel,Housemaid's Knee
+Science,How many officially recognized dwarf planets in the solar system are named after Polynesian deities?,2,0,1,5
+Science,Which horizon in a soil profile consists of bedrock?,R,O,B,D
+Science,If you planted the seeds of Quercus robur what would grow?,Trees,Flowers,Vegtables,Grains
+Science,Alzheimer's disease primarily affects which part of the human body?,Brain,Lungs,Skin,Heart
+Science,Who developed the first successful polio vaccine in the 1950s?,Jonas Salk,John F. Enders,Thomas Weller,Frederick Robbins
+Science,What is the chemical formula for ammonia?,NH3,CO2,NO3,CH4
+Science,Where did the dog breed Chihuahua originate?,Mexico,France,Spain,Russia
+Science,What term is best associated with Sigmund Freud?,Psychoanalysis,Cognitive-Behavioral Therapy,Theory of Gravity,Dialectical Behavior Therapy
+Science,The asteroid belt is located between which two planets?,Mars and Jupiter,Jupiter and Saturn,Mercury and Venus,Earth and Mars
+Science,The medical term for the belly button is which of the following?,Umbilicus,Nevus,Nares,Paxillus
+Science,The core of the Sun can reach which temperature?,27&deg Million F (15&deg Million C),938;000&deg F (521093.3&deg C),8&deg Billion F (&deg4.4 Billion C),Absolute Zero (Both F and C)
+Science,How many chromosomes are in your body cells?,23,21,22,24
+Science,About how old is Earth?,4.5 Billion Years,3.5 Billion Years,2.5 Billion Years,5.5 Billion Years
+Science,Botanically speaking; which of these fruits is NOT a berry?,Strawberry,Blueberry,Banana,Concord Grape
+Science,What is the unit of electrical resistance?,Ohm,Mho,Tesla,Joule
+Science,What is the unit of electrical inductance?,Henry,Weber,Coulomb,Mho
+Science,Muscle fiber is constructed of bundles small long organelles called what?,Myofibrils,Epimysium,Myofiaments,Myocardium
+Science,What animal takes part in Schrödinger's most famous thought experiment?,Cat,Dog,Bat,Butterfly
+Science,The Sun consists of mostly which two elements?,Hydrogen & Helium,Hydrogen & Nitrogen,Carbon & Nitrogen,Carbon & Helium
+Science,What is the largest living organism currently known to man?,Honey Fungus,Blue Whale,Redwood Tree,The Coral Reef
+Science,What part of the brain takes its name from the Greek for seahorse?,Hippocampus,Cerebellum,Thalamus,Amygdala
+Science,What do you study if you are studying entomology?,Insects,Humans,the Brain,Fish
+Science,Approximately how long is a year on Uranus?,84 Earth years,47 Earth years,62 Earth years,109 Earth years
+Science,Which chemical element was originally known as Alabamine?,Astatine,Selenium,Antimony,Molybdenum
+Science,What is the scientific term for 'taste'?,Gustatory Perception,Olfaction,Somatosensation,Auditory Perception
+Science,Which noble gas has the lowest atomic number?,Helium,Neon,Argon,Krypton
+Science,The medial meniscus forms which part of what joint in the human body?,Knee,Elbow,Ankle,Shoulder
+Science,An organism described as heliotropic has a tendancy to move towards which of these things?,Light,Water,Trees,Pollen
+Science,Which portion of the Marijuana plant produces the psychoactive substance known as THC?,Female Flower,Leaves,Male Flower,Root Ball
+Science,Deionized water is water with which of the following removed?,Iron,Oxygen,Hydrogen,Uncharged atoms
+Science,Which of these choices is not one of the phases of mitosis?,Diplophase,Metaphase,Anaphase,Telophase
+Science,Dry ice is the solid form of what substance?,Carbon dioxide,Nitrogen,Ammonia,Oxygen
+Science,What is the most potent toxin known?,Botulinum toxin,Ricin,Cyanide,Asbestos
+Science,What is the study of the cells and tissues of plants and animals?,Histology,Microbiology,Anatomy,Biochemistry
+Science,What is Hypernatremia?,Increase in blood sodium,Decrease in blood potassium,Increase in blood glucose,Decrease in blood iron
+Science,What are the smallest blood vessels in the human body?,Capillaries,Arterioles,Veinules,Lymphatics
+Science,What is an alternative name for multiple personality disorder?,Dissociative identity disorder,Body integrity identity disorder,Identity crisis,Schizophrenia
+Science,What causes the sound of a heartbeat?,Closure of the heart valves,Contraction of the heart chambers,Blood exiting the heart,Relaxation of the heart chambers
+Science,Which of the following bones is not in the leg?,Radius,Patella,Tibia,Fibula 
+Science,Which is the chemical name of H2O?,Dihydrogen Monoxide,Ammonium chloride,Anhydrous Sodium Carbonate,Manganese dioxide
+Science,Which element has the chemical symbol 'Fe'?,Iron,Gold,Silver,Tin
+Science,The moons; Miranda; Ariel; Umbriel; Titania and Oberon orbit which planet?,Uranus,Jupiter,Venus,Neptune
+Science,The 'Islets of Langerhans' is found in which human organ?,Pancreas,Kidney,Liver,Brain
+Science,Gannymede is the largest moon of which planet?,Jupiter,Uranus,Neptune,Mars
+Science,How many degrees Fahrenheit is 100 degrees Celsius? ,212,326,100,451
+Science,How many planets make up our Solar System?,8,7,9,6
+Science,Which element has the atomic number of 7?,Nitrogen,Oxygen,Hydrogen,Neon
+Science,All the following metal elements are liquids at or near room temperature EXCEPT:,Beryllium,Gallium,Caesium,Mercury
+Science,The Axiom of Preventive Medicine states that people with ___ risk for a disease should be screened and we should treat ___ of those people.,low; all,low; some,high; all,high; some
+Science,How many bones are in the human body?,206,203,209,200
+Science,Folic acid is the synthetic form of which vitamin?,Vitamin B,Vitamin A,Vitamin C,Vitamin D
+Science,Which of these is NOT a part of the structure of a typical neuron?,Islets of Langerhans,Node of Ranvier,Schwann cell,Myelin sheath
+Science,After which Danish city is the 72th element on the periodic table named?,Copenhagen,Odense,Herning,Skagen
+Science,The human heart has how many chambers?,4,2,6,3
+Science,The element involved in making human blood red is which of the following?,Iron,Copper,Iridium,Cobalt
+Science,Human cells typically have how many copies of each gene?,2,1,4,3
+Science,What is the molecular formula of Ozone?,O3,C6H2O6,N2O,SO4
+Science,Which of these is a stop codon in DNA?,TAA,ACT,ACA,GTA
+Science,At what temperature does water boil?,212&degF,200&degF,181&degF,178&degF
+Science,Which of these elements on the Periodic Table is a Noble Gas?,Neon,Potassium,Iodine,Colbalt
+Science,Deuterium is an isotope of which element?,Hydrogen,Nitrogen,Helium,Neon
+Science,What element on the periodic table has 92 electrons?,Uranium,Sulfur,Hydrogen,Iron
+Science,What nucleotide pairs with guanine?,Cytosine,Thymine,Adenine,Uracil
+Science,What genetic disease is caused by having an extra Y chromosome (XYY)?,Jacob's Syndrome,Klinefelter's Syndrome,Turner's Syndrome,Down Syndrome
+Science,What does LASER stand for?,Light amplification by stimulated emission of radiation,Lite analysing by stereo ecorazer,Light amplifier by standby energy of radio,Life antimatter by standing entry of range
+Science,What is the unit of electrical capacitance?,Farad,Gauss,Henry,Watt
+Science,Burning which of these metals will produce a bright white flame?,Magnesium,Copper,Lithium,Lead
+Science,Which of the following is NOT a word used to describe an earthquake?,Drop-slide,Foreshock,Strike-slip,Temblor
+Science,What are human nails made of?,Keratin,Bone,Chitin,Calcium
+Science,On which mission did the Space Shuttle Columbia break up upon re-entry?,STS-107,STS-51-L,STS-61-C,STS-109
+Science,Which planet did the Viking 1 spacecraft send surface images of; starting in 1976?,Mars,Saturn,Jupiter,Venus
+Science,Which of the following men does not have a chemical element named after him?,Sir Isaac Newton,Albert Einstein,Niels Bohr,Enrico Fermi
+Science,Down Syndrome is usually caused by an extra copy of which chromosome?,21,23,15,24
+Science,What is the speed of light in a vacuum?,299;792;458 m/s,50;461 m/s,308;215;043 m/s,751;665;014;151 m/s
+Science,On the periodic table of elements; what is the symbol for Tin?,Sn,Ti,Ni,Na
+Science,Which scientific unit is named after an Italian nobleman?,Volt,Pascal,Ohm,Hertz
+Science,Autosomal-dominant Compelling Helio-Ophthalmic Outburst syndrome is the need to do what when seeing the Sun?,Sneeze,Cough,Yawn,Hiccup
+Science,What physics principle relates the net electric flux out of a closed surface to the charge enclosed by that surface?,Gauss's Law,Faraday's Law,Ampere's Law,Biot-Savart Law
+Science,What is the official name of the star located closest to the North Celestial Pole?,Polaris,Eridanus,Gamma Cephei,Iota Cephei
+Science,What is the Linnean name of the domestic apple tree?,Malus pumila,Malus americana,Pomus domestica,Appelus delectica
+Science,Which color cannot be produced in Roses; even through genetic alteration?,Blue,Black,Orange,Brown
+Science,Which of these animals belongs in class Chondrichthyes?,Great white shark,Octopus,Killer whale,Catfish
+Science,Which major extinction event was caused by an asteroid collision and eliminated the majority of non-avian dinosaurs?,Cretaceous-Paleogene,Triassic&ndashJurassic,Permian&ndashTriassic,Ordovician&ndashSilurian
+Science,What is the name of the cognitive bias wherein a person with low ability in a particular skill mistake themselves as being superior?,Dunning-Kruger effect,Meyers-Briggs effect,M&uumlller-Lyer effect,Freud-Hall effect
+Science,Which of the following is NOT a passive electrical component?,Transistor,Resistor,Capacitor,Inductor
+Science,Which of the following are cells of the adaptive immune system?,Cytotoxic T cells,Dendritic cells,Natural killer cells,White blood cells
+Science,In quantum physics; which of these theorised sub-atomic particles has yet to be observed?,Graviton,Z boson,Tau neutrino,Gluon
+Science,Who discovered the Law of Gravity?,Sir Isaac Newton,Galileo Galilei,Charles Darwin,Albert Einstein
+Science,The Harvard architecture for micro-controllers added which additional bus?,Instruction,Address,Data,Control
+Science,What does the MP stand for in MP3?,Moving Picture,Music Player,Multi Pass,Micro Point
+Science,What was the name of the security vulnerability found in Bash in 2014?,Shellshock,Heartbleed,Bashbug,Stagefright
+Science,When Gmail first launched; how much storage did it provide for your email?,1GB,512MB,5GB,Unlimited
+Science,What does AD stand for in relation to Windows Operating Systems? ,Active Directory,Alternative Drive,Automated Database,Active Department
+Science,When was the programming language C# released?,2000,1998,1999,2001
+Science,What five letter word is the motto of the IBM Computer company?,Think,Click,Logic,Pixel
+Science,What amount of bits commonly equals one byte?,8,1,2,64
+Science,How many Hz does the video standard PAL support?,50,59,60,25
+Science,If you were to code software in this language you'd only be able to type 0's and 1's.,Binary,JavaScript,C++,Python
+Science,What does the Prt Sc button do?,Captures what's on the screen and copies it to your clipboard,Nothing,Saves a .png file of what's on the screen in your screenshots folder in photos,Closes all windows
+Science,All of the following programs are classified as raster graphics editors EXCEPT:,Inkscape,Paint.NET,GIMP,Adobe Photoshop
+Science,The series of the Intel HD graphics generation succeeding that of the 5000 and 6000 series (Broadwell) is called:,HD Graphics 500,HD Graphics 700 ,HD Graphics 600,HD Graphics 7000
+Science,The computer OEM manufacturer Clevo; known for its Sager notebook line; is based in which country?,Taiwan,United States,Germany,China (People's Republic of)
+Science,What did the name of the Tor Anonymity Network orignially stand for?,The Onion Router,The Only Router,The Orange Router,The Ominous Router
+Science,What was the name given to Android 4.3?,Jelly Bean,Lollipop,Nutella,Froyo
+Science,Which of these is the name for the failed key escrow device introduced by the National Security Agency in 1993?,Clipper Chip,Enigma Machine,Skipjack,Nautilus
+Science,The internet domain .fm is the country-code top-level domain for which Pacific Ocean island nation?,Micronesia,Fiji,Tuvalu,Marshall Islands
+Science,While Apple was formed in California; in which western state was Microsoft founded?,New Mexico,Washington,Colorado,Arizona
+Science,Which coding language was the #1 programming language in terms of usage on GitHub in 2015?,JavaScript,C#,Python,PHP
+Science,What is the name of the default theme that is installed with Windows XP?,Luna,Neptune,Whistler,Bliss
+Science,In the programming language Python; which of these statements would display the string Hello World correctly?,print(Hello World),console.log(Hello World),echo Hello World,printf(Hello World)
+Science,In Hexadecimal; what color would be displayed from the color code? #00FF00?,Green,Red,Blue,Yellow
+Science,Which computer language would you associate Django framework with?,Python,C#,C++,Java
+Science,Which of these programming languages is a low-level language?,Assembly,Python,C#,Pascal
+Science,What does LTS stand for in the software market?,Long Term Support,Long Taco Service,Ludicrous Transfer Speed,Ludicrous Turbo Speed
+Science,.rs is the top-level domain for what country?,Serbia,Romania,Russia,Rwanda
+Science,.at is the top-level domain for what country?,Austria,Argentina,Australia,Angola
+Science,Which data structure does FILO apply to?,Stack,Queue,Heap,Tree
+Science,Which of the following is the oldest of these computers by release date?,TRS-80,Commodore 64,ZX Spectrum,Apple 3
+Science,What is the name of the process that sends one qubit of information using two bits of classical information?,Quantum Teleportation,Super Dense Coding,Quantum Entanglement,Quantum Programming
+Science,What is the main CPU is the Sega Mega Drive / Sega Genesis?,Motorola 68000,Zilog Z80,Yamaha YM2612,Intel 8088
+Science,This mobile OS held the largest market share in 2012.,iOS,Android,BlackBerry,Symbian
+Science,What does the International System of Quantities refer 1024 bytes as?,Kibibyte,Kylobyte,Kilobyte,Kelobyte
+Science,When did the online streaming service Mixer launch?,2016,2013,2009,2011
+Science,The C programming language was created by this American computer scientist. ,Dennis Ritchie,Tim Berners Lee,al-Khwārizmī,Willis Ware
+Science,What is the name given to layer 4 of the Open Systems Interconnection (ISO) model?,Transport,Session,Data link,Network
+Science,Approximately how many Apple I personal computers were created?,200,100,500,1000
+Science,In computing; what does MIDI stand for?,Musical Instrument Digital Interface,Musical Interface of Digital Instruments,Modular Interface of Digital Instruments,Musical Instrument Data Interface
+Science,In computing; what does LAN stand for?,Local Area Network,Long Antenna Node,Light Access Node,Land Address Navigation
+Science,The acronym RIP stands for which of these?,Routing Information Protocol,Runtime Instance Processes,Regular Interval Processes,Routine Inspection Protocol
+Science,Which of these is not a layer in the OSI model for data communications?,Connection Layer,Application Layer,Transport Layer,Physical Layer
+Science,The teapot often seen in many 3D modeling applications is called what?,Utah Teapot,Pixar Teapot,3D Teapot,Tennessee Teapot
+Science,What is the number of keys on a standard Windows Keyboard?,104,64,94,76
+Science,Unix Time is defined as the number of seconds that have elapsed since when?,Midnight; January 1; 1970,Midnight; July 4; 1976,Midnight on the creator of Unix's birthday,Midnight; July 4; 1980
+Science,What does the 'S' in the RSA encryption algorithm stand for?,Shamir,Secure,Schottky,Stable
+Science,What language does Node.js use?,JavaScript,Java,Java Source,Joomla Source Code
+Science,What is the codename of the eighth generation Intel Core micro-architecture launched in October 2017?,Coffee Lake,Sandy Bridge,Skylake,Broadwell
+Science,Which kind of algorithm is Ron Rivest not famous for creating?,Secret sharing scheme,Hashing algorithm,Asymmetric encryption,Stream cipher
+Science,What does the computer software acronym JVM stand for?,Java Virtual Machine,Java Vendor Machine,Java Visual Machine,Just Virtual Machine
