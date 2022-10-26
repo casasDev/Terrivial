@@ -20,7 +20,7 @@ Science,Where did the dog breed Chihuahua originate?,Mexico,France,Spain,Russia
 Science,What term is best associated with Sigmund Freud?,Psychoanalysis,Cognitive-Behavioral Therapy,Theory of Gravity,Dialectical Behavior Therapy
 Science,The asteroid belt is located between which two planets?,Mars and Jupiter,Jupiter and Saturn,Mercury and Venus,Earth and Mars
 Science,The medical term for the belly button is which of the following?,Umbilicus,Nevus,Nares,Paxillus
-Science,The core of the Sun can reach which temperature?,27&deg Million F (15&deg Million C),938;000&deg F (521093.3&deg C),8&deg Billion F (&deg4.4 Billion C),Absolute Zero (Both F and C)
+Science,The core of the Sun can reach which temperature?,27º Million F (15º Million C),938;000º F (521093.3º C),8º Billion F (4.4º Billion C),Absolute Zero (Both F and C)
 Science,How many chromosomes are in your body cells?,23,21,22,24
 Science,About how old is Earth?,4.5 Billion Years,3.5 Billion Years,2.5 Billion Years,5.5 Billion Years
 Science,Botanically speaking; which of these fruits is NOT a berry?,Strawberry,Blueberry,Banana,Concord Grape
@@ -68,7 +68,7 @@ Science,The element involved in making human blood red is which of the following
 Science,Human cells typically have how many copies of each gene?,2,1,4,3
 Science,What is the molecular formula of Ozone?,O3,C6H2O6,N2O,SO4
 Science,Which of these is a stop codon in DNA?,TAA,ACT,ACA,GTA
-Science,At what temperature does water boil?,212&degF,200&degF,181&degF,178&degF
+Science,At what temperature does water boil?,212ºF,200ºF,181ºF,178ºF
 Science,Which of these elements on the Periodic Table is a Noble Gas?,Neon,Potassium,Iodine,Colbalt
 Science,Deuterium is an isotope of which element?,Hydrogen,Nitrogen,Helium,Neon
 Science,What element on the periodic table has 92 electrons?,Uranium,Sulfur,Hydrogen,Iron
@@ -92,8 +92,8 @@ Science,What is the official name of the star located closest to the North Celes
 Science,What is the Linnean name of the domestic apple tree?,Malus pumila,Malus americana,Pomus domestica,Appelus delectica
 Science,Which color cannot be produced in Roses; even through genetic alteration?,Blue,Black,Orange,Brown
 Science,Which of these animals belongs in class Chondrichthyes?,Great white shark,Octopus,Killer whale,Catfish
-Science,Which major extinction event was caused by an asteroid collision and eliminated the majority of non-avian dinosaurs?,Cretaceous-Paleogene,Triassic&ndashJurassic,Permian&ndashTriassic,Ordovician&ndashSilurian
-Science,What is the name of the cognitive bias wherein a person with low ability in a particular skill mistake themselves as being superior?,Dunning-Kruger effect,Meyers-Briggs effect,M&uumlller-Lyer effect,Freud-Hall effect
+Science,Which major extinction event was caused by an asteroid collision and eliminated the majority of non-avian dinosaurs?,Cretaceous-Paleogene,Triassic-Jurassic,Permian-Triassic,Ordovician-Silurian
+Science,What is the name of the cognitive bias wherein a person with low ability in a particular skill mistake themselves as being superior?,Dunning-Kruger effect,Meyers-Briggs effect,Mülller-Lyer effect,Freud-Hall effect
 Science,Which of the following is NOT a passive electrical component?,Transistor,Resistor,Capacitor,Inductor
 Science,Which of the following are cells of the adaptive immune system?,Cytotoxic T cells,Dendritic cells,Natural killer cells,White blood cells
 Science,In quantum physics; which of these theorised sub-atomic particles has yet to be observed?,Graviton,Z boson,Tau neutrino,Gluon
