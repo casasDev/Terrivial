@@ -75,7 +75,6 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
             val r = RadioButton(this)
             r.buttonTintList = ColorStateList.valueOf(c.color)
             r.setOnClickListener {
-                Log.d("OYEE", c.pregunticas["Historia"].toString())
                 if (r.isChecked && !c.punticos[sc]!!) r.isChecked = false
             }
             r.setOnLongClickListener {
