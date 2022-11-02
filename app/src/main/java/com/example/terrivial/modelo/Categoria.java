@@ -62,7 +62,7 @@ public abstract class Categoria {
             punticos.keySet().forEach(c -> punticos.put(c, false));
             p.firePropertyChange("fallaste", punticos.keySet(),false);
         }
-        if (punticos.values().stream().allMatch(i -> i)) {
+        if (punticos.values().stream().allMatch(i ->i)) {
             this.puntoConseguido = true;
             Partida.getInstance().anadirPuntos(this.puntosAsignados);
             p.firePropertyChange("puntoConseguido", this.nombre, this);
@@ -95,5 +95,9 @@ public abstract class Categoria {
             });
             this.puntosAsignados = this.pregunticas.keySet().size();
         }
+
+    public boolean isPuntoConseguido() {
+        return puntoConseguido;
+    }
 
 }

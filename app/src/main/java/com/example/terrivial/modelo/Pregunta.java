@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pregunta {
-    private String enunciado;
-    private List<String> respuestas;
-    private String subCateg;
+    private final String enunciado;
+    private final List<String> respuestas;
+    private final String subCateg;
 
         public Pregunta(String enunciado, String subCateg){
         this.enunciado = enunciado;
@@ -16,8 +16,9 @@ public class Pregunta {
         public void anadirRespuesta(String respuesta){
             this.respuestas.add(respuesta);
         }
+
         public String toString(){
-            return enunciado +" ||| "+respuestas.toString() + " ||| " + subCateg;
+            return enunciado +" ||| "+ respuestas + " ||| " + subCateg;
         }
         public boolean respuestaCorrecta(String r){
            return r.equals(respuestas.get(respuestas.size()-1));

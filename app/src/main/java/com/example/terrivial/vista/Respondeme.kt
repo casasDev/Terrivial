@@ -61,7 +61,7 @@ class Respondeme : AppCompatActivity() {
                 atras.visibility = View.VISIBLE
             }
             r.setOnTouchListener{
-                    view : View, event : MotionEvent ->
+                    _: View, event : MotionEvent ->
                 if(event.action == MotionEvent.ACTION_DOWN) {
                     r.startAnimation(scaleDown)
                 }
@@ -72,7 +72,7 @@ class Respondeme : AppCompatActivity() {
             atras.setOnClickListener{
                 onBackPressed()
             }
-            atras.setOnTouchListener { view : View, motionEvent : MotionEvent->
+            atras.setOnTouchListener { _: View, motionEvent : MotionEvent->
                 if(motionEvent.action == MotionEvent.ACTION_DOWN) {
                    atras.startAnimation(scaleDown)
                 }
