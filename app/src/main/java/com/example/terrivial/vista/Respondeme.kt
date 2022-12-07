@@ -7,32 +7,45 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.daimajia.androidanimations.library.Techniques
 import com.daimajia.androidanimations.library.YoYo
 import com.example.terrivial.R
+import com.example.terrivial.modelo.Jugador
 import com.example.terrivial.modelo.Partida
+import com.example.terrivial.modelo.Potenciador
+import java.beans.PropertyChangeEvent
+import java.beans.PropertyChangeListener
+import java.util.*
 import java.util.Collections.shuffle
 
-class Respondeme : AppCompatActivity() {
+class Respondeme : AppCompatActivity(), PropertyChangeListener {
     private lateinit var pregunta: TextView
     private var partida = Partida.getInstance()
     private lateinit var respuestas : List<TextView>
     private lateinit var scaleUp : Animation
     private lateinit var scaleDown : Animation
     private lateinit var atras : ImageButton
+    private lateinit var action : Button
+    private lateinit var strategy: Strategy
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.respondeme)
+        Partida.getInstance().addPropertyChangeListener(this)
         atras = findViewById(R.id.atras)
         atras.background.setTint(partida.categoriaActual.color)
         pregunta = findViewById(R.id.pregunta)
+        action = findViewById(R.id.action)
         scaleDown = AnimationUtils.loadAnimation(this,R.anim.scale_down2)
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up2)
         respuestas = listOf<TextView>(findViewById(R.id.respuesta0), findViewById(R.id.respuesta1),findViewById(R.id.respuesta2), findViewById(R.id.respuesta3))
         rellenar()
+        action.setOnClickListener{
+            Partida.getInstance().hacerAccion("FiftyFifty")
+        }
     }
     @SuppressLint("ClickableViewAccessibility")
     private fun rellenar(){
@@ -90,4 +103,17 @@ class Respondeme : AppCompatActivity() {
         }
         if(respuestas[0].hasOnClickListeners()) partida.esRespuestaCorrecta("")
     }
+    fun setStrategy(pot : String){
+        when(pot){
+            Potenciador.FIFTYFIFTY.nombre -> strategy = FiftyFIfty()
+            Potenciador.PASARPREGUNTA.nombre -> strategy = PasarPregunta()
+            Potenciador.RESPUESTACORRECTA.nombre -> strategy = RespuestaCorrecta()
+        }
     }
+    override fun propertyChange(p0: PropertyChangeEvent?) {
+        if(p0?.propertyName.equals("Accion")){
+            setStrategy(p0?.oldValue as String)
+            strategy.accion(respuestas)
+        }
+    }
+}

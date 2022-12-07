@@ -94,4 +94,16 @@
         android:visibility="gone"
         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
+    <Button
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/respuesta3"
+        android:layout_alignStart="@+id/respuesta3"
+        android:layout_alignBottom="@+id/pregunta"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="-493dp"
+        android:text="Button" />
+
 </RelativeLayout>

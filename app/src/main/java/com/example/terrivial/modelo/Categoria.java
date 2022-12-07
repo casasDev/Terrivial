@@ -99,5 +99,4 @@ public abstract class Categoria {
     public boolean isPuntoConseguido() {
         return puntoConseguido;
     }
-
 }

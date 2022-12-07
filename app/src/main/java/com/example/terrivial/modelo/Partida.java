@@ -15,6 +15,7 @@ public class Partida {
     private final List<Categoria> categorias;
     private Categoria categoriaActual;
     private final PropertyChangeSupport p = new PropertyChangeSupport(this);
+    private Jugador jugador;
     private Partida(){
         finalizada = false;
         puntos = 0;
@@ -22,6 +23,7 @@ public class Partida {
         categorias.add(Entretenimiento.getInstance());
         categorias.add(Ciencia.getInstance());
         categorias.add(Geopolitica.getInstance());
+        jugador = Jugador.getInstance();
     }
     public static Partida getInstance(){
         if(mPartida == null) mPartida = new Partida();
@@ -76,4 +78,10 @@ public class Partida {
     public Categoria getCategoria(String pCateg){
         return categorias.stream().filter(c -> c.getNombre().equalsIgnoreCase(pCateg)).findAny().orElse(null);
     }
-}
+    public void hacerAccion(String pot){
+        Potenciador p = jugador.getPotenciador(pot);
+            //jugador.restarMonedas(p.getCoste());
+           // p.decrementarCantidad();
+            this.p.firePropertyChange("Accion",p.getNombre(),jugador);
+    }
+    }
