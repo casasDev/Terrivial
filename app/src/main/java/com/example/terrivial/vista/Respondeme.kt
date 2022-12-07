@@ -104,11 +104,9 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
         if(respuestas[0].hasOnClickListeners()) partida.esRespuestaCorrecta("")
     }
     fun setStrategy(pot : String){
-        when(pot){
-            Potenciador.FIFTYFIFTY.nombre -> strategy = FiftyFIfty()
-            Potenciador.PASARPREGUNTA.nombre -> strategy = PasarPregunta()
-            Potenciador.RESPUESTACORRECTA.nombre -> strategy = RespuestaCorrecta()
-        }
+        this.strategy = Arrays.stream(Potenciador.values()).filter {
+            pot == it.nombre
+        }.findFirst().orElse(null).strategy
     }
     override fun propertyChange(p0: PropertyChangeEvent?) {
         if(p0?.propertyName.equals("Accion")){
