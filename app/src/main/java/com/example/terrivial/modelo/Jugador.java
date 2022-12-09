@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Jugador {
     private int monedas;
-    private Potenciador[] potenciadores;
+    private final Potenciador[] potenciadores;
     private static Jugador mJugador;
     private Jugador(){
         monedas = 100;

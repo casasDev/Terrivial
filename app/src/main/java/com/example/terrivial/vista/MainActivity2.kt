@@ -41,14 +41,10 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
         botonesCategoria()
     }
     private fun generarRadio() {
-        grids.forEach { g ->
-                when (g.id) {
-                    R.id.geop -> radioCategoria("Geopolitica",R.id.geop)
-                    R.id.cienc -> radioCategoria("Ciencia",R.id.cienc)
-                    R.id.entr -> radioCategoria("Entretenimiento",R.id.entr)
+        grids.forEach {
+                radioCategoria(it.contentDescription.toString(),it.id)
                 }
             }
-        }
     @SuppressLint("ClickableViewAccessibility")
     private fun botonesCategoria(){
         botones.forEach{ b ->

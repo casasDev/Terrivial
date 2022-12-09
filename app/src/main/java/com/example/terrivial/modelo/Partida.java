@@ -15,7 +15,7 @@ public class Partida {
     private final List<Categoria> categorias;
     private Categoria categoriaActual;
     private final PropertyChangeSupport p = new PropertyChangeSupport(this);
-    private Jugador jugador;
+    private final Jugador jugador;
     private Partida(){
         finalizada = false;
         puntos = 0;

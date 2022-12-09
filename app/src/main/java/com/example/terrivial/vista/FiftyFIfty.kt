@@ -1,7 +1,6 @@
 package com.example.terrivial.vista
 
 import android.graphics.Color
-import android.util.Log
 import android.view.View
 import java.util.*
 import java.util.stream.IntStream

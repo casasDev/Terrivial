@@ -7,10 +7,10 @@ import com.example.terrivial.vista.Strategy;
 
 public enum Potenciador {
     FIFTYFIFTY("FiftyFifty",100, new FiftyFIfty()), RESPUESTACORRECTA("RespuestaCorrecta",100, new RespuestaCorrecta()), PASARPREGUNTA("PasarPregunta",100, new PasarPregunta()) ;
-    private int coste;
+    private final int coste;
     private int cantidad;
-    private String nombre;
-    private Strategy s;
+    private final String nombre;
+    private final Strategy s;
     Potenciador(String pNombre, int pCoste, Strategy s){
         this.cantidad = 0;
         this.nombre = pNombre;

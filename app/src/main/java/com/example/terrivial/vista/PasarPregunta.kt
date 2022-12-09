@@ -2,7 +2,6 @@ package com.example.terrivial.vista
 
 import android.app.Activity
 import android.content.Intent
-import android.provider.Telephony
 import android.view.View
 import com.example.terrivial.modelo.Partida
 

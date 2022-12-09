@@ -65,7 +65,8 @@
         android:layout_marginEnd="13dp"
         android:layout_marginBottom="-223dp"
         app:columnCount="3"
-        app:rowCount="1">
+        app:rowCount="1"
+        android:contentDescription="@string/geopolitica2">
 
     </androidx.gridlayout.widget.GridLayout>
 
@@ -80,7 +81,8 @@
         android:layout_marginEnd="47dp"
         android:layout_marginBottom="-331dp"
         app:columnCount="3"
-        app:rowCount="1">
+        app:rowCount="1"
+        android:contentDescription="@string/ciencia2">
 
     </androidx.gridlayout.widget.GridLayout>
 
@@ -95,7 +97,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="-458dp"
         app:rowCount="1"
-        app:columnCount="5">
+        app:columnCount="5"
+        android:contentDescription="@string/entretenimiento2">
 
     </androidx.gridlayout.widget.GridLayout>
 

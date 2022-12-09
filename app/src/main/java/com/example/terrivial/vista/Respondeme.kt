@@ -14,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.daimajia.androidanimations.library.Techniques
 import com.daimajia.androidanimations.library.YoYo
 import com.example.terrivial.R
-import com.example.terrivial.modelo.Jugador
 import com.example.terrivial.modelo.Partida
 import com.example.terrivial.modelo.Potenciador
 import java.beans.PropertyChangeEvent
@@ -29,7 +28,6 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
     private lateinit var scaleUp : Animation
     private lateinit var scaleDown : Animation
     private lateinit var atras : ImageButton
-    private lateinit var action : Button
     private lateinit var strategy: Strategy
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,14 +36,10 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
         atras = findViewById(R.id.atras)
         atras.background.setTint(partida.categoriaActual.color)
         pregunta = findViewById(R.id.pregunta)
-        action = findViewById(R.id.action)
         scaleDown = AnimationUtils.loadAnimation(this,R.anim.scale_down2)
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up2)
         respuestas = listOf<TextView>(findViewById(R.id.respuesta0), findViewById(R.id.respuesta1),findViewById(R.id.respuesta2), findViewById(R.id.respuesta3))
         rellenar()
-        action.setOnClickListener{
-            Partida.getInstance().hacerAccion("FiftyFifty")
-        }
     }
     @SuppressLint("ClickableViewAccessibility")
     private fun rellenar(){
@@ -103,7 +97,7 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
         }
         if(respuestas[0].hasOnClickListeners()) partida.esRespuestaCorrecta("")
     }
-    fun setStrategy(pot : String){
+    private fun setStrategy(pot : String){
         this.strategy = Arrays.stream(Potenciador.values()).filter {
             pot == it.nombre
         }.findFirst().orElse(null).strategy

@@ -16,7 +16,6 @@ public class Pregunta {
         public void anadirRespuesta(String respuesta){
             this.respuestas.add(respuesta);
         }
-
         public String toString(){
             return enunciado +" ||| "+ respuestas + " ||| " + subCateg;
         }

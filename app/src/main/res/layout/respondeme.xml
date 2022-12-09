@@ -6,15 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".vista.Respondeme">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pregunta"
+        android:layout_alignBottom="@+id/respuesta3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-92dp" />
+
     <TextView
         android:id="@+id/pregunta"
         android:layout_width="match_parent"
         android:layout_height="159dp"
         android:background="@drawable/textshape"
-        android:textSize="20sp"
         android:textAlignment="center"
         android:textColor="#000000"
-        />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/respuesta0"
@@ -93,17 +104,5 @@
         app:srcCompat="?attr/homeAsUpIndicator"
         android:visibility="gone"
         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/action"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/respuesta3"
-        android:layout_alignStart="@+id/respuesta3"
-        android:layout_alignBottom="@+id/pregunta"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="-493dp"
-        android:text="Button" />
 
 </RelativeLayout>
