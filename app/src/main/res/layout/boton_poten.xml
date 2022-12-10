@@ -2,34 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    android:layout_width="125dp"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="118dp"
-        android:layout_height="wrap_content"
-        card_view:cardBackgroundColor="#1e1e1e"
-        >
+        android:layout_width="47dp"
+        android:layout_height="56dp"
+        card_view:cardBackgroundColor="#1e1e1e">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="99dp"
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/fotopoten"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/respuestacorrecta2"/>
+                android:layout_height="38dp"
+                android:padding="1dp"
+                app:srcCompat="@drawable/respuestacorrecta2" />
 
             <TextView
+                android:id="@+id/canti"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="textEnd"
+                android:padding="1dp"
                 android:text="Xd"
+                android:textAlignment="textEnd"
                 android:textColor="@color/white"
-                />
+                android:textSize="13sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>

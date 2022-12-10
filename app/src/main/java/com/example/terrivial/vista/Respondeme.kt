@@ -11,6 +11,8 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.daimajia.androidanimations.library.Techniques
 import com.daimajia.androidanimations.library.YoYo
 import com.example.terrivial.R
@@ -29,6 +31,8 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
     private lateinit var scaleDown : Animation
     private lateinit var atras : ImageButton
     private lateinit var strategy: Strategy
+    private lateinit var recyclerPotenciador : RecyclerView
+    private lateinit var botonesPotenciador: AdaptadorRecycler
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.respondeme)
@@ -36,6 +40,10 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
         atras = findViewById(R.id.atras)
         atras.background.setTint(partida.categoriaActual.color)
         pregunta = findViewById(R.id.pregunta)
+        recyclerPotenciador = findViewById(R.id.botonesPoten)
+        recyclerPotenciador.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
+        botonesPotenciador = AdaptadorRecycler()
+        recyclerPotenciador.adapter = botonesPotenciador
         scaleDown = AnimationUtils.loadAnimation(this,R.anim.scale_down2)
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up2)
         respuestas = listOf<TextView>(findViewById(R.id.respuesta0), findViewById(R.id.respuesta1),findViewById(R.id.respuesta2), findViewById(R.id.respuesta3))

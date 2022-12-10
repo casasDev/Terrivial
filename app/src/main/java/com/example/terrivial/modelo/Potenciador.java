@@ -1,17 +1,20 @@
 package com.example.terrivial.modelo;
 
+import com.example.terrivial.R;
 import com.example.terrivial.vista.FiftyFIfty;
 import com.example.terrivial.vista.PasarPregunta;
 import com.example.terrivial.vista.RespuestaCorrecta;
 import com.example.terrivial.vista.Strategy;
 
 public enum Potenciador {
-    FIFTYFIFTY("FiftyFifty",100, new FiftyFIfty()), RESPUESTACORRECTA("RespuestaCorrecta",100, new RespuestaCorrecta()), PASARPREGUNTA("PasarPregunta",100, new PasarPregunta()) ;
+    FIFTYFIFTY("FiftyFifty",100, new FiftyFIfty(), R.drawable.fiftyfifty), RESPUESTACORRECTA("RespuestaCorrecta",100, new RespuestaCorrecta(), R.drawable.respuestacorrecta2), PASARPREGUNTA("PasarPregunta",100, new PasarPregunta(), R.drawable.pasar) ;
     private final int coste;
     private int cantidad;
     private final String nombre;
     private final Strategy s;
-    Potenciador(String pNombre, int pCoste, Strategy s){
+    private final int foto;
+    Potenciador(String pNombre, int pCoste, Strategy s, int foto){
+        this.foto = foto;
         this.cantidad = 0;
         this.nombre = pNombre;
         this.coste = pCoste;
@@ -41,5 +44,9 @@ public enum Potenciador {
 
     public Strategy getStrategy() {
         return s;
+    }
+
+    public int getFoto() {
+        return foto;
     }
 }
