@@ -100,10 +100,14 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        respuestas.forEach{
-            it.background.setTint(Color.WHITE)
-        }
+        cambiarColor(Color.WHITE)
         if(respuestas[0].hasOnClickListeners()) partida.esRespuestaCorrecta("")
+        finish()
+    }
+    private fun cambiarColor(pColor : Int){
+        respuestas.forEach{
+            it.background.setTint(pColor)
+        }
     }
     private fun setStrategy(pot : String){
         this.strategy = Arrays.stream(Potenciador.values()).filter {
