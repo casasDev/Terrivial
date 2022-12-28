@@ -1,6 +1,7 @@
 package com.example.terrivial.modelo;
 
 import android.content.Context;
+import android.util.Log;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
@@ -59,6 +60,7 @@ public class Partida {
         this.categoriaActual = categorias.stream().filter(cc -> cc.getNombre().equalsIgnoreCase(c)).findAny().orElse(null);
        if(categoriaActual !=null)
         this.preguntaActual = categoriaActual.preguntaRandom();
+       p.firePropertyChange("preguntaActualizada",null,null);
     }
     public Pregunta getPreguntaActual(){
         return this.preguntaActual;

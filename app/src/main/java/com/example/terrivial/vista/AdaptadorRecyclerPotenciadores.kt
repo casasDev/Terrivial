@@ -6,11 +6,14 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.daimajia.androidanimations.library.Techniques
+import com.daimajia.androidanimations.library.YoYo
 import com.example.terrivial.R
 import com.example.terrivial.modelo.Partida
 import com.example.terrivial.modelo.Potenciador
+import kotlinx.coroutines.android.awaitFrame
 
-class AdaptadorRecycler : RecyclerView.Adapter<AdaptadorRecycler.ViewHolder>() {
+class AdaptadorRecyclerPotenciadores : RecyclerView.Adapter<AdaptadorRecyclerPotenciadores.ViewHolder>() {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var cantidad : TextView
         var foto : ImageView
@@ -20,6 +23,8 @@ class AdaptadorRecycler : RecyclerView.Adapter<AdaptadorRecycler.ViewHolder>() {
             foto = itemView.findViewById(R.id.fotopoten)
             itemView.setOnClickListener{
                 Partida.getInstance().hacerAccion(foto.contentDescription.toString())
+                YoYo.with(Techniques.FadeOut).duration(250).playOn(it)
+                it.isEnabled = false
             }
         }
     }
@@ -36,5 +41,4 @@ class AdaptadorRecycler : RecyclerView.Adapter<AdaptadorRecycler.ViewHolder>() {
     override fun getItemCount(): Int {
         return Potenciador.values().size
     }
-
 }

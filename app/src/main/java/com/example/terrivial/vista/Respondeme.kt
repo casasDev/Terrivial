@@ -7,7 +7,6 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +21,7 @@ import java.beans.PropertyChangeEvent
 import java.beans.PropertyChangeListener
 import java.util.*
 import java.util.Collections.shuffle
+import java.util.stream.IntStream
 
 class Respondeme : AppCompatActivity(), PropertyChangeListener {
     private lateinit var pregunta: TextView
@@ -32,7 +32,7 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
     private lateinit var atras : ImageButton
     private lateinit var strategy: Strategy
     private lateinit var recyclerPotenciador : RecyclerView
-    private lateinit var botonesPotenciador: AdaptadorRecycler
+    private lateinit var botonesPotenciador: AdaptadorRecyclerPotenciadores
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.respondeme)
@@ -42,7 +42,7 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
         pregunta = findViewById(R.id.pregunta)
         recyclerPotenciador = findViewById(R.id.botonesPoten)
         recyclerPotenciador.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
-        botonesPotenciador = AdaptadorRecycler()
+        botonesPotenciador = AdaptadorRecyclerPotenciadores()
         recyclerPotenciador.adapter = botonesPotenciador
         scaleDown = AnimationUtils.loadAnimation(this,R.anim.scale_down2)
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up2)
@@ -74,6 +74,7 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
                 }
                 YoYo.with(Techniques.SlideInLeft).duration(250).playOn(atras)
                 atras.visibility = View.VISIBLE
+               YoYo.with(Techniques.SlideOutRight).duration(250).playOn(recyclerPotenciador)
             }
             r.setOnTouchListener{
                     _: View, event : MotionEvent ->
@@ -118,6 +119,9 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
         if(p0?.propertyName.equals("Accion")){
             setStrategy(p0?.oldValue as String)
             strategy.accion(respuestas)
+
+        } else if(p0?.propertyName.equals("preguntaActualizada")){
+            rellenar()
         }
     }
 }

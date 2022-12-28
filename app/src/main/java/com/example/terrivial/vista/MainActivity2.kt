@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.os.Bundle
+import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.view.animation.Animation
@@ -73,7 +74,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
                 if (r.isChecked && !c.punticos[sc]!!) r.isChecked = false
             }
             r.setOnLongClickListener {
-                Toast.makeText(this, sc, Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, c.punticos[sc].toString(), Toast.LENGTH_SHORT).show()
                 false
             }
             gl.addView(r)
