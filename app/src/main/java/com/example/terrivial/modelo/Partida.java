@@ -1,7 +1,6 @@
 package com.example.terrivial.modelo;
 
 import android.content.Context;
-import android.util.Log;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;

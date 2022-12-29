@@ -21,7 +21,6 @@ import java.beans.PropertyChangeEvent
 import java.beans.PropertyChangeListener
 import java.util.*
 import java.util.Collections.shuffle
-import java.util.stream.IntStream
 
 class Respondeme : AppCompatActivity(), PropertyChangeListener {
     private lateinit var pregunta: TextView

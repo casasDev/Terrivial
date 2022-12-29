@@ -11,7 +11,6 @@ import com.daimajia.androidanimations.library.YoYo
 import com.example.terrivial.R
 import com.example.terrivial.modelo.Partida
 import com.example.terrivial.modelo.Potenciador
-import kotlinx.coroutines.android.awaitFrame
 
 class AdaptadorRecyclerPotenciadores : RecyclerView.Adapter<AdaptadorRecyclerPotenciadores.ViewHolder>() {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
