@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="275dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        card_view:cardBackgroundColor="#2e2e2e">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fotoTienda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:srcCompat="@drawable/fiftyfifty" />
+
+            <TextView
+                android:id="@+id/descr"
+                android:layout_width="158dp"
+                android:layout_height="132dp"
+                android:layout_alignEnd="@+id/fotoTienda"
+                android:layout_alignBottom="@+id/fotoTienda"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="206dp"
+                android:layout_marginEnd="-263dp"
+                android:layout_marginBottom="-38dp"
+                android:text="@string/descr_ff"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/precio"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/fotoTienda"
+                android:layout_alignBottom="@+id/fotoTienda"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="-100dp"
+                android:layout_marginBottom="76dp"
+                android:text="@string/_100_monedas"
+                android:textColor="#FFFF00" />
+
+            <Button
+                android:id="@+id/comprar"
+                android:layout_width="151dp"
+                android:layout_height="48dp"
+                android:layout_alignTop="@+id/descr"
+                android:layout_alignEnd="@+id/fotoTienda"
+                android:layout_alignBottom="@+id/fotoTienda"
+                android:layout_marginTop="105dp"
+                android:layout_marginEnd="-76dp"
+                android:layout_marginBottom="-48dp"
+                android:text="@string/comprar"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

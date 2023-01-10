@@ -10,4 +10,10 @@
     <string name="ciencia2">Ciencia</string>
     <string name="entretenimiento2">Entretenimiento</string>
     <string name="geopolitica2">Geopolitica</string>
+    <string name="tienda">Tienda</string>
+    <string name="comprar">Comprar</string>
+    <string name="_100_monedas">100 monedas</string>
+    <string name="descr_ff">Este potenciador quita de forma completamente aleatoria dos respuestas incorrectas.</string>
+    <string name="descr_pasar">Este potenciador permite al jugador cambiar de pregunta sin necesidad de responder a la actual (te lleva a una pregunta de la misma categoría). </string>
+    <string name="descr_respcor">Este potenciador da directamente la respuesta correcta.</string>
 </resources>

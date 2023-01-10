@@ -20,7 +20,21 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="55dp"
         android:layout_marginEnd="57dp"
-        android:layout_marginBottom="-357dp"
-        android:text="@string/jugar"
-        />
+        android:layout_marginBottom="-290dp"
+        android:text="@string/jugar" />
+
+    <Button
+        android:id="@+id/tienda"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/jugar"
+        android:layout_alignTop="@+id/jugar"
+        android:layout_alignEnd="@+id/jugar"
+        android:layout_alignBottom="@+id/jugar"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="-170dp"
+        android:text="@string/tienda"
+        android:backgroundTint="#17500F"/>
 </RelativeLayout>
