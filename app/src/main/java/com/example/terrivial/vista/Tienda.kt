@@ -6,8 +6,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.terrivial.R
 import com.example.terrivial.modelo.Potenciador
+import java.beans.PropertyChangeEvent
+import java.beans.PropertyChangeListener
 
-class Tienda : AppCompatActivity() {
+class Tienda : AppCompatActivity(){
     private lateinit var recyclerTienda : RecyclerView
     private lateinit var cardsPotenciador : AdapterRecyclerTienda
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,4 +21,5 @@ class Tienda : AppCompatActivity() {
         cardsPotenciador = AdapterRecyclerTienda()
         recyclerTienda.adapter = cardsPotenciador
     }
-}
+
+    }

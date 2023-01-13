@@ -22,14 +22,14 @@
 
             <TextView
                 android:id="@+id/descr"
-                android:layout_width="158dp"
-                android:layout_height="132dp"
+                android:layout_width="wrap_content"
+                android:layout_height="113dp"
                 android:layout_alignEnd="@+id/fotoTienda"
                 android:layout_alignBottom="@+id/fotoTienda"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="206dp"
-                android:layout_marginEnd="-263dp"
-                android:layout_marginBottom="-38dp"
+                android:layout_marginEnd="-262dp"
+                android:layout_marginBottom="-19dp"
                 android:text="@string/descr_ff"
                 android:textColor="#FFFFFF" />
 
@@ -58,6 +58,16 @@
                 android:layout_marginBottom="-48dp"
                 android:text="@string/comprar"
                 tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/tienes"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fotoTienda"
+                android:layout_alignEnd="@+id/fotoTienda"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="-264dp"
+                android:textColor="#FFFFFF" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

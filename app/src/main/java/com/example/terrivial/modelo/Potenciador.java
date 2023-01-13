@@ -1,12 +1,17 @@
 package com.example.terrivial.modelo;
 
+import androidx.versionedparcelable.ParcelImpl;
+
 import com.example.terrivial.R;
 import com.example.terrivial.vista.FiftyFIfty;
 import com.example.terrivial.vista.PasarPregunta;
 import com.example.terrivial.vista.RespuestaCorrecta;
 import com.example.terrivial.vista.Strategy;
 
-public enum Potenciador {
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+
+public enum Potenciador{
     FIFTYFIFTY("FiftyFifty",100, new FiftyFIfty(), R.drawable.fiftyfifty, R.string.descr_ff), RESPUESTACORRECTA("RespuestaCorrecta",500, new RespuestaCorrecta(), R.drawable.respuestacorrecta2,R.string.descr_respcor), PASARPREGUNTA("PasarPregunta",150, new PasarPregunta(), R.drawable.pasar,R.string.descr_pasar) ;
     private final int coste;
     private int cantidad;
@@ -14,6 +19,7 @@ public enum Potenciador {
     private final Strategy s;
     private final int foto;
     private final int descripcion;
+    private final PropertyChangeSupport ps;
     Potenciador(String pNombre, int pCoste, Strategy s, int foto, int descripcion){
         this.foto = foto;
         this.cantidad = 0;
@@ -21,6 +27,7 @@ public enum Potenciador {
         this.coste = pCoste;
         this.s = s;
         this.descripcion = descripcion;
+        ps = new PropertyChangeSupport(this);
     }
     public int getCoste() {
         return coste;
@@ -33,17 +40,16 @@ public enum Potenciador {
     public String getNombre() {
         return nombre;
     }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
-    }
     public void incrementarCantidad(){
         this.cantidad++;
+        ps.firePropertyChange("Canti",this.cantidad,null);
     }
     public void decrementarCantidad(){
         this.cantidad--;
     }
-
+    public boolean tienesMonedos(){
+        return Partida.getInstance().getMonedas()>=this.coste;
+    }
     public Strategy getStrategy() {
         return s;
     }
@@ -53,5 +59,12 @@ public enum Potenciador {
     }
     public int getDescripcion(){
         return this.descripcion;
+    }
+    public void addPropertyChangeListener(PropertyChangeListener pl){
+        ps.addPropertyChangeListener(pl);
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
 }

@@ -1,6 +1,8 @@
 package com.example.terrivial.modelo;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.opengl.Visibility;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
@@ -16,6 +18,7 @@ public class Partida {
     private Categoria categoriaActual;
     private final PropertyChangeSupport p = new PropertyChangeSupport(this);
     private final Jugador jugador;
+    private int monedas;
     private Partida(){
         finalizada = false;
         puntos = 0;
@@ -24,6 +27,7 @@ public class Partida {
         categorias.add(Ciencia.getInstance());
         categorias.add(Geopolitica.getInstance());
         jugador = Jugador.getInstance();
+        monedas = 0;
     }
     public static Partida getInstance(){
         if(mPartida == null) mPartida = new Partida();
@@ -81,8 +85,16 @@ public class Partida {
     }
     public void hacerAccion(String pot){
         Potenciador p = jugador.getPotenciador(pot);
-            //jugador.restarMonedas(p.getCoste());
-           // p.decrementarCantidad();
+           p.decrementarCantidad();
             this.p.firePropertyChange("Accion",p.getNombre(),jugador);
     }
+
+    public int getMonedas() {
+        return monedas;
     }
+
+    public void setMonedas(int mone) {
+            this.monedas = mone;
+            p.firePropertyChange("monedos", false, this.monedas);
+    }
+}

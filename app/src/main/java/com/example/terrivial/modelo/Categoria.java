@@ -55,7 +55,9 @@ public abstract class Categoria {
     }
 
     public void asignarPunticos(String subCateg, boolean puntico) {
+        Partida p2 = Partida.getInstance();
         if(puntico) {
+            p2.setMonedas(p2.getMonedas()+10);
             punticos.put(subCateg, true);
             p.firePropertyChange("subPuntico", subCateg, false);
         } else{
@@ -63,6 +65,7 @@ public abstract class Categoria {
             p.firePropertyChange("fallaste", punticos.keySet(),false);
         }
         if (punticos.values().stream().allMatch(i ->i)) {
+            p2.setMonedas(p2.getMonedas()+100);
             this.puntoConseguido = true;
             Partida.getInstance().anadirPuntos(this.puntosAsignados);
             p.firePropertyChange("puntoConseguido", this.nombre, this);
