@@ -2,8 +2,11 @@ package com.example.terrivial.vista
 
 import android.content.SharedPreferences
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -22,12 +25,16 @@ class AdapterRecyclerTienda : RecyclerView.Adapter<AdapterRecyclerTienda.ViewHol
         var comprar : Button
         var foto : ImageView
         var tienes : TextView
+        var scaleUp : Animation
+        var  scaleDown : Animation
         init {
             precio = itemView.findViewById(R.id.precio)
             descr = itemView.findViewById(R.id.descr)
             comprar = itemView.findViewById(R.id.comprar)
             tienes = itemView.findViewById(R.id.tienes)
             foto = itemView.findViewById(R.id.fotoTienda)
+            scaleUp = AnimationUtils.loadAnimation(itemView.context,R.anim.scale_up2)
+            scaleDown = AnimationUtils.loadAnimation(itemView.context,R.anim.scale_down2)
         }
 
         override fun propertyChange(p0: PropertyChangeEvent?) {
@@ -50,17 +57,23 @@ class AdapterRecyclerTienda : RecyclerView.Adapter<AdapterRecyclerTienda.ViewHol
         holder.tienes.text = "TIENES: "+potenciadores[position].cantidad
         holder.precio.text = potenciadores[position].coste.toString() + " monedas"
         holder.comprar.setOnClickListener{
-            if(potenciadores[position].tienesMonedos()) {
+           if(potenciadores[position].tienesMonedos()) {
                 Partida.getInstance().monedas =
-                    Partida.getInstance().monedas - potenciadores[position].coste
+                   Partida.getInstance().monedas - potenciadores[position].coste
                 potenciadores[position].incrementarCantidad()
                 var editor = it.context.getSharedPreferences("DatosPalyer",0).edit()
                 editor.putInt("Cantidades"+potenciadores[position].nombre,potenciadores[position].cantidad)
                 editor.commit()
                 editor.apply()
-            }
+           }
             else
                 Toast.makeText(it.context, "Pero tu eres bobo, que no tienes dineros",Toast.LENGTH_LONG).show()
+        }
+        holder.comprar.setOnTouchListener{ view:View, motionEvent : MotionEvent ->
+            if(motionEvent.action == MotionEvent.ACTION_DOWN)
+                view.startAnimation(holder.scaleDown)
+            else view.startAnimation(holder.scaleUp)
+            false
         }
     }
     override fun getItemCount(): Int {

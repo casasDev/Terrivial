@@ -85,7 +85,6 @@ public class Partida {
     }
     public void hacerAccion(String pot){
         Potenciador p = jugador.getPotenciador(pot);
-           p.decrementarCantidad();
             this.p.firePropertyChange("Accion",p.getNombre(),jugador);
     }
 
