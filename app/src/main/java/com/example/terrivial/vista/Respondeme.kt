@@ -2,6 +2,7 @@ package com.example.terrivial.vista
 
 import android.annotation.SuppressLint
 import android.graphics.Color
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
@@ -21,6 +22,7 @@ import java.beans.PropertyChangeEvent
 import java.beans.PropertyChangeListener
 import java.util.*
 import java.util.Collections.shuffle
+import java.util.stream.IntStream
 
 class Respondeme : AppCompatActivity(), PropertyChangeListener {
     private lateinit var pregunta: TextView
@@ -46,7 +48,12 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
         recyclerPotenciador.adapter = botonesPotenciador
         scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down2)
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up2)
-        respuestas = listOf<TextView>(findViewById(R.id.respuesta0), findViewById(R.id.respuesta1), findViewById(R.id.respuesta2), findViewById(R.id.respuesta3))
+        respuestas = listOf<TextView>(
+            findViewById(R.id.respuesta0),
+            findViewById(R.id.respuesta1),
+            findViewById(R.id.respuesta2),
+            findViewById(R.id.respuesta3)
+        )
         rellenar()
     }
 
@@ -124,5 +131,16 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
         } else if (p0?.propertyName.equals("preguntaActualizada")) {
             rellenar()
         }
+    }
+    override fun onPause() {
+        super.onPause()
+        if(MainActivity.mp.isPlaying)
+            MainActivity.mp.pause()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if(!MainActivity.mp.isPlaying && !MainActivity.mute.isChecked)
+            MainActivity.mp.start()
     }
 }

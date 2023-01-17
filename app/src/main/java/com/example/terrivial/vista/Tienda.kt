@@ -15,11 +15,22 @@ class Tienda : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.l_tienda)
+        MainActivity.checkMute()
         recyclerTienda = findViewById(R.id.recyclerTienda)
         recyclerTienda.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         cardsPotenciador = AdapterRecyclerTienda()
         recyclerTienda.adapter = cardsPotenciador
     }
+    override fun onPause() {
+        super.onPause()
+        if(MainActivity.mp.isPlaying)
+            MainActivity.mp.pause()
+    }
 
+    override fun onResume() {
+        super.onResume()
+        if(!MainActivity.mp.isPlaying && !MainActivity.mute.isChecked)
+            MainActivity.mp.start()
+    }
     }

@@ -31,6 +31,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+        MainActivity.checkMute()
         this.puntos = findViewById(R.id.puntos)
         scaleUp = AnimationUtils.loadAnimation(this,R.anim.scale_up1)
         scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down1)
@@ -112,5 +113,16 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
         if(!partida.isFinalizada)
         partida.anadirPuntos(-Integer.parseInt(this.puntos.text.toString().replace("PUNTOS: ","")))
         finish()
+    }
+    override fun onPause() {
+        super.onPause()
+        if(MainActivity.mp.isPlaying)
+            MainActivity.mp.pause()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if(!MainActivity.mp.isPlaying && !MainActivity.mute.isChecked)
+            MainActivity.mp.start()
     }
 }
