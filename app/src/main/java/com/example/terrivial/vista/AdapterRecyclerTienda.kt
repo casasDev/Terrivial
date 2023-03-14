@@ -1,6 +1,5 @@
 package com.example.terrivial.vista
 
-import android.content.SharedPreferences
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
@@ -61,10 +60,11 @@ class AdapterRecyclerTienda : RecyclerView.Adapter<AdapterRecyclerTienda.ViewHol
                 Partida.getInstance().monedas =
                    Partida.getInstance().monedas - potenciadores[position].coste
                 potenciadores[position].incrementarCantidad()
-                var editor = it.context.getSharedPreferences("DatosPalyer",0).edit()
+                val editor = it.context.getSharedPreferences("DatosPalyer",0).edit()
                 editor.putInt("Cantidades"+potenciadores[position].nombre,potenciadores[position].cantidad)
                 editor.commit()
                 editor.apply()
+               GestorSonidos.queSuene(holder.itemView.context,R.raw.chiclin)
            }
             else
                 Toast.makeText(it.context, "Pero tu eres bobo, que no tienes dineros",Toast.LENGTH_LONG).show()

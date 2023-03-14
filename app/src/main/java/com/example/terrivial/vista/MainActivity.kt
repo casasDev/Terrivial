@@ -56,9 +56,11 @@ class MainActivity : AppCompatActivity(), PropertyChangeListener {
         scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down1)
         jugar.setOnClickListener {
             startActivity(Intent(this, MainActivity2::class.java))
+            GestorSonidos.queSuene(this,R.raw.clickbutton)
         }
         tienda.setOnClickListener {
             startActivity(Intent(this, Tienda::class.java))
+            GestorSonidos.queSuene(this,R.raw.clickbutton)
         }
         jugar.setOnTouchListener { view: View, motionEvent: MotionEvent ->
             onTouch(view, motionEvent)
@@ -90,6 +92,7 @@ class MainActivity : AppCompatActivity(), PropertyChangeListener {
         }
     }
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onPause() {
         super.onPause()
         if(mp.isPlaying)

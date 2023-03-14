@@ -72,11 +72,19 @@ class Respondeme : AppCompatActivity(), PropertyChangeListener {
         respuestas.forEach { r ->
             YoYo.with(Techniques.RotateInUpLeft).duration(500).playOn(r)
             r.setOnClickListener {
-                if (!partida.esRespuestaCorrecta(r.text.toString())) YoYo.with(Techniques.Shake)
+                if (!partida.esRespuestaCorrecta(r.text.toString())){
+                    YoYo.with(Techniques.Shake)
                     .duration(500).playOn(r)
+                    GestorSonidos.queSuene(this,R.raw.cagaste)
+                }
+                else{
+                    GestorSonidos.queSuene(this,R.raw.acertar)
+                }
                 respuestas.forEach {
                     if (it != respuestas[3]) it.background.setTint(Color.RED)
-                    else it.background.setTint(Color.GREEN)
+                    else {
+                        it.background.setTint(Color.GREEN)
+                    }
                     it.setOnClickListener(null)
                     it.setOnTouchListener(null)
                 }

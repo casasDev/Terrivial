@@ -52,6 +52,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
             b.setOnClickListener {
                 partida.actualizarPregunta(b.text.toString())
                 startActivity(Intent(this, Respondeme::class.java))
+                GestorSonidos.queSuene(this,R.raw.slidein)
             }
             b.setOnTouchListener{
                     _: View, motion : MotionEvent ->
@@ -108,6 +109,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
 
     }
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onBackPressed() {
         super.onBackPressed()
         if(!partida.isFinalizada)
