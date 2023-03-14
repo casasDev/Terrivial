@@ -99,6 +99,7 @@ class MainActivity : AppCompatActivity(), PropertyChangeListener {
         mp.pause()
     }
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onResume() {
         super.onResume()
         if(!mp.isPlaying && !mute.isChecked)
