@@ -9,8 +9,8 @@ import com.example.terrivial.vista.Strategy;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
-public enum Potenciador{
-    FIFTYFIFTY("FiftyFifty",100, new FiftyFIfty(), R.drawable.fiftyfifty, R.string.descr_ff,R.raw.bomba), RESPUESTACORRECTA("RespuestaCorrecta",500, new RespuestaCorrecta(), R.drawable.respuestacorrecta2,R.string.descr_respcor,R.raw.acertar), PASARPREGUNTA("PasarPregunta",150, new PasarPregunta(), R.drawable.pasar,R.string.descr_pasar,R.raw.slidein) ;
+public enum Potenciador {
+    FIFTYFIFTY("FiftyFifty", 100, new FiftyFIfty(), R.drawable.fiftyfifty, R.string.descr_ff, R.raw.bomba), RESPUESTACORRECTA("RespuestaCorrecta", 500, new RespuestaCorrecta(), R.drawable.respuestacorrecta2, R.string.descr_respcor, R.raw.acertar), PASARPREGUNTA("PasarPregunta", 150, new PasarPregunta(), R.drawable.pasar, R.string.descr_pasar, R.raw.slidein);
     private final int coste;
     private int cantidad;
     private final String nombre;
@@ -19,7 +19,8 @@ public enum Potenciador{
     private final int descripcion;
     private final PropertyChangeSupport ps;
     private final int sonido;
-    Potenciador(String pNombre, int pCoste, Strategy s, int foto, int descripcion, int sonido){
+
+    Potenciador(String pNombre, int pCoste, Strategy s, int foto, int descripcion, int sonido) {
         this.foto = foto;
         this.cantidad = 0;
         this.nombre = pNombre;
@@ -29,6 +30,7 @@ public enum Potenciador{
         ps = new PropertyChangeSupport(this);
         this.sonido = sonido;
     }
+
     public int getCoste() {
         return coste;
     }
@@ -40,16 +42,20 @@ public enum Potenciador{
     public String getNombre() {
         return nombre;
     }
-    public void incrementarCantidad(){
+
+    public void incrementarCantidad() {
         this.cantidad++;
-        ps.firePropertyChange("Canti",this.cantidad,null);
+        ps.firePropertyChange("Canti", this.cantidad, null);
     }
-    public void decrementarCantidad(){
+
+    public void decrementarCantidad() {
         this.cantidad--;
     }
-    public boolean tienesMonedos(){
-        return Partida.getInstance().getMonedas()>=this.coste;
+
+    public boolean tienesMonedos() {
+        return Partida.getInstance().getMonedas() >= this.coste;
     }
+
     public Strategy getStrategy() {
         return s;
     }
@@ -57,13 +63,16 @@ public enum Potenciador{
     public int getFoto() {
         return foto;
     }
-    public int getDescripcion(){
+
+    public int getDescripcion() {
         return this.descripcion;
     }
-    public int getSonido(){
+
+    public int getSonido() {
         return this.sonido;
     }
-    public void addPropertyChangeListener(PropertyChangeListener pl){
+
+    public void addPropertyChangeListener(PropertyChangeListener pl) {
         ps.addPropertyChangeListener(pl);
     }
 

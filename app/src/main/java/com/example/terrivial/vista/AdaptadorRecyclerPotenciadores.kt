@@ -52,7 +52,7 @@ class AdaptadorRecyclerPotenciadores :
             )
             editor.commit()
             editor.apply()
-            GestorSonidos.queSuene(holder.itemView.context,Potenciador.values()[position].sonido)
+            GestorSonidos.queSuene(holder.itemView.context, Potenciador.values()[position].sonido)
         }
         if (Potenciador.values()[position].cantidad <= 0) holder.itemView.isEnabled = false
     }
