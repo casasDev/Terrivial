@@ -13,6 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Terrivial"
         tools:targetApi="31">
+        <activity android:name=".vista.casino.AdivinaNumero"
+            android:exported="false" />
+        <activity android:name=".vista.casino.JuegoView"
+            android:exported="false"/>
+        <activity
+            android:name=".vista.casino.Casino"
+            android:exported="false" />
         <activity
             android:name=".vista.Tienda"
             android:exported="false" />

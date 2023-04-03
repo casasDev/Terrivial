@@ -15,13 +15,18 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.terrivial.R
 import com.example.terrivial.modelo.Partida
+import com.example.terrivial.modelo.casino.Ahorcado
+import com.example.terrivial.vista.casino.Casino
 import com.google.android.material.switchmaterial.SwitchMaterial
 import java.beans.PropertyChangeEvent
 import java.beans.PropertyChangeListener
+import java.io.BufferedReader
+import java.io.InputStreamReader
 
 class MainActivity : AppCompatActivity(), PropertyChangeListener {
     private val partida = Partida.getInstance()
     private lateinit var jugar: Button
+    private lateinit var casino : Button
     private lateinit var scaleUp: Animation
     private lateinit var scaleDown: Animation
     private lateinit var tienda: Button
@@ -52,21 +57,32 @@ class MainActivity : AppCompatActivity(), PropertyChangeListener {
         partida.monedas = sharedPreferences.getInt("monedas", 0)
         jugar = findViewById(R.id.jugar)
         tienda = findViewById(R.id.tienda)
+        casino = findViewById(R.id.casino)
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up1)
         scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down1)
+        Ahorcado.ListaPalabras.getMiLista().llenarLista(BufferedReader(InputStreamReader(assets.open("0_palabras_todas.txt"))).lines())
         jugar.setOnClickListener {
-            startActivity(Intent(this, MainActivity2::class.java))
             GestorSonidos.queSuene(this,R.raw.clickbutton)
+            startActivity(Intent(this, MainActivity2::class.java))
+
         }
         tienda.setOnClickListener {
-            startActivity(Intent(this, Tienda::class.java))
             GestorSonidos.queSuene(this,R.raw.clickbutton)
+            startActivity(Intent(this, Tienda::class.java))
+
         }
         jugar.setOnTouchListener { view: View, motionEvent: MotionEvent ->
             onTouch(view, motionEvent)
         }
         tienda.setOnTouchListener { view: View, motionEvent: MotionEvent ->
             onTouch(view, motionEvent)
+        }
+        casino.setOnClickListener {
+            GestorSonidos.queSuene(this,R.raw.clickbutton)
+            startActivity(Intent(this, Casino::class.java))
+        }
+        casino.setOnTouchListener{view : View, motionEvent: MotionEvent ->
+            onTouch(view,motionEvent)
         }
         mute.setOnClickListener{
             if(mute.isChecked) mp.pause()

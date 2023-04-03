@@ -18,7 +18,7 @@ public abstract class Minijuego{
     public void addPropertyChangeListener(PropertyChangeListener p){
         this.pcs.addPropertyChangeListener(p);
     }
-    public PropertyChangeSupport getPcs(){
+    protected PropertyChangeSupport getPcs(){
         return this.pcs;
     }
 
@@ -37,7 +37,10 @@ public abstract class Minijuego{
     public String getDescripcion() {
         return this.descripcion;
     }
-    public void apuestaLograda(){
-        Partida.getInstance().setMonedas(Partida.getInstance().getMonedas()+(this.apuesta*2));
+    protected void apuestaAcabada(boolean lograda){
+        if(lograda) {
+            Partida.getInstance().setMonedas(Partida.getInstance().getMonedas() + (this.apuesta * 2));
+            pcs.firePropertyChange("Apuesta lograda", null, null);
+        } else pcs.firePropertyChange("Perdiste",null,null);
     }
 }

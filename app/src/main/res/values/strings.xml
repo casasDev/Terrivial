@@ -17,4 +17,9 @@
     <string name="descr_pasar">Este potenciador permite al jugador cambiar de pregunta sin necesidad de responder a la actual (te lleva a una pregunta de la misma categoría). </string>
     <string name="descr_respcor">Este potenciador da directamente la respuesta correcta.</string>
     <string name="mute">Mute music</string>
+    <string name="casino">CASINO</string>
+    <string name="interrogacion">\?</string>
+    <string name="intentos">Intentos: </string>
+    <string name="apuesta_lograda">Enhorabuena, has logrado la apuesta</string>
+    <string name="perdiste">Pues has perdido culega, mas suerte la próxima</string>
 </resources>

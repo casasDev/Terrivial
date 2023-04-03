@@ -15,12 +15,14 @@
         android:id="@+id/jugar"
         android:layout_width="299dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
         android:layout_alignBottom="@+id/imageView2"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="55dp"
+        android:layout_marginTop="197dp"
         android:layout_marginEnd="57dp"
-        android:layout_marginBottom="-290dp"
+        android:layout_marginBottom="-245dp"
         android:text="@string/jugar" />
 
     <Button
@@ -31,25 +33,40 @@
         android:layout_alignTop="@+id/jugar"
         android:layout_alignEnd="@+id/jugar"
         android:layout_alignBottom="@+id/jugar"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="170dp"
-        android:layout_marginEnd="-1dp"
-        android:layout_marginBottom="-170dp"
-        android:text="@string/tienda"
-        android:backgroundTint="#17500F"/>
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="-187dp"
+        android:backgroundTint="#17500F"
+        android:text="@string/tienda" />
+
+    <Button
+        android:id="@+id/casino"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_alignStart="@+id/jugar"
+        android:layout_alignTop="@+id/jugar"
+        android:layout_alignEnd="@+id/jugar"
+        android:layout_alignBottom="@+id/jugar"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="-96dp"
+        android:backgroundTint="#0000FF"
+        android:text="@string/casino" />
 
     <TextView
         android:id="@+id/monedos"
-        android:layout_width="161dp"
-        android:layout_height="37dp"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
         android:layout_alignBottom="@+id/imageView2"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="246dp"
-        android:layout_marginTop="78dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="-39dp"
+        android:layout_marginStart="237dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="-44dp"
         android:textColor="#FFFF00" />
 
     <com.google.android.material.switchmaterial.SwitchMaterial
