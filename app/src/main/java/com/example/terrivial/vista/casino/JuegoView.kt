@@ -9,6 +9,7 @@ import android.widget.FrameLayout
 import android.widget.TextView
 import com.example.terrivial.R
 import com.example.terrivial.modelo.casino.Minijuego
+import com.example.terrivial.vista.MainActivity
 import java.beans.PropertyChangeEvent
 import java.beans.PropertyChangeListener
 
@@ -38,5 +39,16 @@ abstract class JuegoView : AppCompatActivity(), PropertyChangeListener {
         } else if(p0?.propertyName.equals("Perdiste")){
             mensajeFinal.text = getString(R.string.perdiste)
         }
+    }
+    override fun onPause() {
+        super.onPause()
+        if(MainActivity.mp.isPlaying)
+            MainActivity.mp.pause()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if(!MainActivity.mp.isPlaying && !MainActivity.mute.isChecked)
+            MainActivity.mp.start()
     }
 }
