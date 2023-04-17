@@ -14,6 +14,8 @@ class AdivinaNumero : JuegoView() {
     private lateinit var numero : TextView
     private lateinit var intentos : TextView
     private lateinit var botonesNumeros : GridLayout
+    private val numFilas =3
+    private val numColumnas = 4
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.juego = (AdivinarNumero(this.getApuesta()))
@@ -25,13 +27,13 @@ class AdivinaNumero : JuegoView() {
         generarBotones()
     }
     private fun generarBotones(){
-        botonesNumeros.columnCount = 4
-        botonesNumeros.rowCount = 3
+        botonesNumeros.columnCount = numColumnas
+        botonesNumeros.rowCount = numFilas
         range(0,10).forEach {
             val b = Button(this)
             b.text = it.toString()
             b.setOnClickListener {
-                (this.juego as AdivinarNumero).ejecutar(Integer.parseInt(b.text.toString()))
+                ejecutar(b.text.toString())
             }
             b.visibility = View.VISIBLE
             botonesNumeros.addView(b)
@@ -43,7 +45,7 @@ class AdivinaNumero : JuegoView() {
 
     override fun propertyChange(p0: PropertyChangeEvent?) {
         if(p0?.propertyName.equals("Numero incorrecto")){
-            Toast.makeText(this,"La has cagado majo ese numero no era",Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"La has cagado majo ese numero no era",Toast.LENGTH_SHORT).show()
             intentos.text = getString(R.string.intentos)+p0?.oldValue
         } else super.propertyChange(p0)
     }

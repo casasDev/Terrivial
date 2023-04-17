@@ -12,11 +12,14 @@ import org.w3c.dom.Text
 
 class Casino : AppCompatActivity() {
     private lateinit var b : Button
+    private lateinit var b2 : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_casino)
         b = findViewById(R.id.button)
+        b2 = findViewById(R.id.button22)
         b.setOnClickListener { startActivity(Intent(this,AdivinaNumero::class.java)) }
+        b2.setOnClickListener { startActivity(Intent(this,Ahorcadito::class.java)) }
     }
     override fun onPause() {
         super.onPause()

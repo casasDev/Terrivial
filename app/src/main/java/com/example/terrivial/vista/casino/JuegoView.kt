@@ -1,12 +1,12 @@
 package com.example.terrivial.vista.casino
 
-import androidx.appcompat.app.AppCompatActivity
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.FrameLayout
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.terrivial.R
 import com.example.terrivial.modelo.casino.Minijuego
 import com.example.terrivial.vista.MainActivity
@@ -31,6 +31,10 @@ abstract class JuegoView : AppCompatActivity(), PropertyChangeListener {
         return this.apuesta
     }
     protected abstract fun getLayoutID() : Int
+    protected fun ejecutar(s : String){
+        this.juego.ejecutar(s)
+    }
+    @SuppressLint("SetTextI18n")
     override fun propertyChange(p0: PropertyChangeEvent?) {
         contenedor.visibility = View.GONE
         mensajeFinal.visibility = View.VISIBLE
@@ -38,6 +42,7 @@ abstract class JuegoView : AppCompatActivity(), PropertyChangeListener {
             mensajeFinal.text = getString(R.string.apuesta_lograda)
         } else if(p0?.propertyName.equals("Perdiste")){
             mensajeFinal.text = getString(R.string.perdiste)
+            if((p0?.oldValue as String) != "") mensajeFinal.text = mensajeFinal.text.toString()+"\nLa respuesta era: "+(p0.oldValue as String)
         }
     }
     override fun onPause() {

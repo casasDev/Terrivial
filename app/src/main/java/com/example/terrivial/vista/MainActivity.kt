@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity(), PropertyChangeListener {
         casino = findViewById(R.id.casino)
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up1)
         scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down1)
-        Ahorcado.ListaPalabras.getMiLista().llenarLista(BufferedReader(InputStreamReader(assets.open("0_palabras_todas.txt"))).lines())
+        Ahorcado.llenarLista(BufferedReader(InputStreamReader(assets.open("0_palabras_todas.txt"))).lines())
         jugar.setOnClickListener {
             GestorSonidos.queSuene(this,R.raw.clickbutton)
             startActivity(Intent(this, MainActivity2::class.java))

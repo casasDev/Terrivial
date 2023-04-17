@@ -9,7 +9,9 @@ public class AdivinarNumero extends Minijuego{
         super(apuesta, 0, "Este minijuego es muy simple, se generará internamente un número del cero al nueve, tendrás dos oportunidades para adivinarlo. Si fallas adiós monedas, si aciertas se te duplicará la cantidad que hayas introducido","Adivina el número");
     }
 
-    public void ejecutar(int num2) {
+
+    public void ejecutar(String s) {
+        int num2 = Integer.parseInt(s);
          if(!comprobarNumero(num2)){
             vidas--;
             if (vidas == 0){
@@ -20,6 +22,12 @@ public class AdivinarNumero extends Minijuego{
             apuestaAcabada(true);
         }
     }
+
+    @Override
+    protected String getRespuesta() {
+        return Integer.toString(num);
+    }
+
     public boolean comprobarNumero(int num2){
         return this.num == num2;
     }
