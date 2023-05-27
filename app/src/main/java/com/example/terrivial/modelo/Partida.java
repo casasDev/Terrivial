@@ -96,4 +96,7 @@ public class Partida {
             this.monedas = mone;
             p.firePropertyChange("monedos", false, this.monedas);
     }
+    public void reset(){
+        categorias.forEach(Categoria::resetearCategoria);
+    }
 }

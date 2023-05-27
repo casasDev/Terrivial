@@ -114,6 +114,7 @@ class MainActivity2 : AppCompatActivity(), PropertyChangeListener{
         super.onBackPressed()
         if(!partida.isFinalizada)
         partida.anadirPuntos(-Integer.parseInt(this.puntos.text.toString().replace("PUNTOS: ","")))
+        partida.reset()
         finish()
     }
     override fun onPause() {

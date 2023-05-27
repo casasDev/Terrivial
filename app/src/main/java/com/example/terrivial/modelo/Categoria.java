@@ -102,4 +102,7 @@ public abstract class Categoria {
     public boolean isPuntoConseguido() {
         return puntoConseguido;
     }
+    public void resetearCategoria(){
+        punticos.keySet().forEach(k -> punticos.put(k,false));
+    }
 }
