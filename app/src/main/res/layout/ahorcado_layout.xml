@@ -21,7 +21,7 @@
         android:layout_marginTop="113dp"
         android:layout_marginEnd="-216dp"
         android:layout_marginBottom="-138dp"
-        android:text="TextView" />
+         />
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLetras"
@@ -50,5 +50,6 @@
         android:layout_marginTop="414dp"
         android:layout_marginEnd="-4dp"
         android:layout_marginBottom="-109dp"
-        android:text="TextView" />
+        android:text="@string/lista_negra"
+        android:textColor="#FF0000"/>
 </RelativeLayout>

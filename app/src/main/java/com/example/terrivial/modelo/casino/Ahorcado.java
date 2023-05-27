@@ -13,8 +13,9 @@ public class Ahorcado extends Minijuego {
     private final String palabra;
     private final char[] palDest;
     private final char[] palDestG;
-    private int vidas = 7;
     private final List<Character> listaNegra;
+    private static final int vidasIniciales = 7;
+    private int vidas = vidasIniciales;
     private static final char[] abecedario = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
     public Ahorcado(int apuesta) {
@@ -25,20 +26,25 @@ public class Ahorcado extends Minijuego {
         palDestG = generarGuiones();
     }
 
+    public int getVidas() {
+        return vidas;
+    }
+    public static int getVidasIniciales(){
+        return vidasIniciales;
+    }
     public static char[] getAbecedario() {
         return abecedario;
     }
 
     public void ejecutar(String s) {
-        this.getPcs().firePropertyChange("Primera peticion", Arrays.toString(palDestG),null);
         char c = s.charAt(0);
         if (comprobarLetra(c)) {
-            this.getPcs().firePropertyChange("Letra acertada", Arrays.toString(palDestG), null);
+            this.getPcs().firePropertyChange("Letra acertada", this.toString(), null);
             if (hasAcabado()) apuestaAcabada(true);
         } else {
             vidas--;
             listaNegra.add(c);
-            this.getPcs().firePropertyChange("Letra fallada", listaNegra, vidas);
+            this.getPcs().firePropertyChange("Letra fallada", c, vidas);
             if (vidas == 0) apuestaAcabada(false);
         }
     }
@@ -112,7 +118,12 @@ public class Ahorcado extends Minijuego {
         }
 
         public String palabraRandom() {
-            return listaPalabras.get(new Random().nextInt(646614)+1);
+            return listaPalabras.get(new Random().nextInt(646614) + 1);
         }
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(palDestG).replace("]", "").replace("[", "").replace(",", "");
     }
 }

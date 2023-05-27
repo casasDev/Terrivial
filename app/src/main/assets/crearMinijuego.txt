@@ -1,0 +1,10 @@
+Aquí adjunto los pasos para crear un nuevo minijuego:
+
+    -Crear una subclase de la clase Minijuego
+    -Añadir la información requerida en el enumerado Minijuegos
+    -Crear la nueva activity para el juego, que será subclase de JuegoView (no de AppCompatActivity)
+    La creación de dicha activity conlleva lo siguiente:
+        -Crear una clase que sea subclase de JuegoView
+        -Crear el layout para el juego que queramos crear
+        -Añadir la información pertinente en el androidManifest.xml para que nos detecte la atividad
+        -Por último, añadir una nueva cláusula condicional en la clase juego Factory para el nuevo juego

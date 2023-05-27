@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="342dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_juego_shape"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/fotoJuego"
+                android:layout_width="100dp"
+                android:layout_height="86dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ahorcadito" />
+
+            <TextView
+                android:id="@+id/tituloJuego"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                />
+
+            <TextView
+                android:id="@+id/descripcion_juego"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                 />
+
+            <EditText
+                android:id="@+id/apuesta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/introduce_tu_apuesta"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/iniciar_juego"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#FF5733"
+                android:text="@string/jugar" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

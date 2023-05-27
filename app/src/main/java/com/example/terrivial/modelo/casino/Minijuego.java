@@ -5,20 +5,24 @@ import com.example.terrivial.modelo.Partida;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
-public abstract class Minijuego{
+public abstract class Minijuego {
     private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);
-    private final int apuesta,foto;
+    private final int apuesta, foto;
     private final String nombre, descripcion;
-    public Minijuego(int apuesta, int foto, String descripcion, String nombre){
+    private static int apuestaActual;
+
+    public Minijuego(int apuesta, int foto, String descripcion, String nombre) {
         this.apuesta = apuesta;
         this.foto = foto;
         this.descripcion = descripcion;
         this.nombre = nombre;
     }
-    public void addPropertyChangeListener(PropertyChangeListener p){
+
+    public void addPropertyChangeListener(PropertyChangeListener p) {
         this.pcs.addPropertyChangeListener(p);
     }
-    protected PropertyChangeSupport getPcs(){
+
+    protected PropertyChangeSupport getPcs() {
         return this.pcs;
     }
 
@@ -37,12 +41,26 @@ public abstract class Minijuego{
     public String getDescripcion() {
         return this.descripcion;
     }
-    protected void apuestaAcabada(boolean lograda){
-        if(lograda) {
-            Partida.getInstance().setMonedas(Partida.getInstance().getMonedas() + (this.apuesta * 2));
-            pcs.firePropertyChange("Apuesta lograda", null, null);
-        } else pcs.firePropertyChange("Perdiste",getRespuesta(),null);
+
+    public static void setApuestaActual(int apuesta) {
+        apuestaActual = apuesta;
     }
+
+    public static int getApuestaActual() {
+        return apuestaActual;
+    }
+
+    protected void apuestaAcabada(boolean lograda) {
+        if (lograda) {
+            Partida.getInstance().setMonedas(Minijuego.getApuestaActual() * 2 + Partida.getInstance().getMonedas());
+            pcs.firePropertyChange("Apuesta lograda", null, null);
+        } else {
+            Partida.getInstance().setMonedas(Partida.getInstance().getMonedas()-Minijuego.getApuestaActual());
+            pcs.firePropertyChange("Perdiste", getRespuesta(), null);
+        }
+    }
+
     public abstract void ejecutar(String s);
+
     protected abstract String getRespuesta();
 }

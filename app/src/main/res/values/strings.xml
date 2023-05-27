@@ -22,4 +22,6 @@
     <string name="intentos">Intentos: </string>
     <string name="apuesta_lograda">Enhorabuena, has logrado la apuesta</string>
     <string name="perdiste">Pues has perdido culega, mas suerte la próxima</string>
+    <string name="lista_negra">Lista negra</string>
+    <string name="introduce_tu_apuesta">Introduce tu apuesta</string>
 </resources>
