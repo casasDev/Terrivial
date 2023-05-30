@@ -3,6 +3,7 @@ package com.example.terrivial.modelo;
 import static java.util.stream.IntStream.range;
 
 import android.content.Context;
+
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.io.BufferedReader;
@@ -23,6 +24,7 @@ public abstract class Categoria {
     private final PropertyChangeSupport p = new PropertyChangeSupport(this);
     private int puntosAsignados;
     private final int color;
+
     public Categoria(int pColor) {
         puntoConseguido = false;
         pregunticas = new HashMap<>();
@@ -30,79 +32,89 @@ public abstract class Categoria {
         nombre = this.getClass().toString().substring(35);
         this.color = pColor;
     }
-    public int getColor(){
+
+    public int getColor() {
         return this.color;
     }
-    public void addPropertyChangeListener(PropertyChangeListener l){
+
+    public void addPropertyChangeListener(PropertyChangeListener l) {
         this.p.addPropertyChangeListener(l);
     }
-    public String getNombre(){
+
+    public String getNombre() {
         return this.nombre;
     }
+
     public Pregunta preguntaRandom() {
-        List<Pregunta> p =(List<Pregunta>)pregunticas.values().toArray()[new Random().nextInt(pregunticas.keySet().size())];
+        List<Pregunta> p = (List<Pregunta>) pregunticas.values().toArray()[new Random().nextInt(pregunticas.keySet().size())];
         return p.get(new Random().nextInt(p.size()));
     }
 
     public Map<String, List<Pregunta>> getPregunticas() {
         return this.pregunticas;
     }
-    public Map<String ,Boolean> getPunticos(){
+
+    public Map<String, Boolean> getPunticos() {
         return this.punticos;
     }
+
     public void anadirLista(String subCateg, List<Pregunta> lista) {
         this.pregunticas.put(subCateg, lista);
     }
 
     public void asignarPunticos(String subCateg, boolean puntico) {
         Partida p2 = Partida.getInstance();
-        if(puntico) {
-            p2.setMonedas(p2.getMonedas()+10);
+        if (puntico) {
+            p2.setMonedas(p2.getMonedas() + 10);
             punticos.put(subCateg, true);
             p.firePropertyChange("subPuntico", subCateg, false);
-        } else{
+        } else {
             punticos.keySet().forEach(c -> punticos.put(c, false));
-            p.firePropertyChange("fallaste", punticos.keySet(),false);
+            p.firePropertyChange("fallaste", punticos.keySet(), false);
         }
-        if (punticos.values().stream().allMatch(i ->i)) {
-            p2.setMonedas(p2.getMonedas()+100);
+        if (punticos.values().stream().allMatch(i -> i) && !this.puntoConseguido) {
+            p2.setMonedas(p2.getMonedas() + 100);
             this.puntoConseguido = true;
             Partida.getInstance().anadirPuntos(this.puntosAsignados);
             p.firePropertyChange("puntoConseguido", this.nombre, this);
         }
     }
+
     private List<Pregunta> leerFichero(String subCateg, Context c) throws IOException {
         List<Pregunta> lista = new ArrayList<>();
         new BufferedReader(
                 new InputStreamReader(
                         c.getAssets().open("Pregunticas/"
-                        +this.getNombre()+
-                        "/"+subCateg+".txt"), StandardCharsets.UTF_8))
-                .lines().forEach(l ->{
+                                + this.getNombre() +
+                                "/" + subCateg + ".txt"), StandardCharsets.UTF_8))
+                .lines().forEach(l -> {
                     String[] s = l.split(",");
                     Pregunta p = new Pregunta(s[1], subCateg);
-                    range(0,s.length-2).forEach(i -> p.anadirRespuesta(s[s.length-(i+1)]));
+                    range(0, s.length - 2).forEach(i -> p.anadirRespuesta(s[s.length - (i + 1)]));
                     lista.add(p);
 
                 });
         return lista;
     }
-        public void llenarMapa(Context c){
-            this.pregunticas.keySet().forEach(ca ->{
-                this.punticos.put(ca,false);
-                try {
-                    this.anadirLista(ca, leerFichero(ca,c));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            });
-            this.puntosAsignados = this.pregunticas.keySet().size();
-        }
+
+    public void llenarMapa(Context c) {
+        this.pregunticas.keySet().forEach(ca -> {
+            this.punticos.put(ca, false);
+            try {
+                this.anadirLista(ca, leerFichero(ca, c));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        this.puntosAsignados = this.pregunticas.keySet().size();
+    }
 
     public boolean isPuntoConseguido() {
         return puntoConseguido;
     }
-    public void resetearCategoria(){
-        punticos.keySet().forEach(k -> punticos.put(k,false));
+
+    public void resetearCategoria() {
+        if (isPuntoConseguido()) this.puntoConseguido = false;
+        punticos.keySet().forEach(k -> punticos.put(k, false));
     }
 }
