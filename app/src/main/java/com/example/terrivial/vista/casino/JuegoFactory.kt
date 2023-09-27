@@ -12,6 +12,9 @@ object JuegoFactory {
         else if(juego == "Adivinar el número"){
             return Intent(c,AdivinaNumero::class.java)
         }
+        else if(juego == "Hundir la flota"){
+            return Intent(c,BattleshipGUI::class.java)
+        }
         else throw java.lang.Exception("El minijuego no existe")
     }
 }

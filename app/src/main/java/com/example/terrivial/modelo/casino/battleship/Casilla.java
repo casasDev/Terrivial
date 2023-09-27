@@ -1,5 +1,6 @@
 package com.example.terrivial.modelo.casino.battleship;
 
+
 public class Casilla {
     private final int fila;
     private final int columna;
@@ -8,7 +9,6 @@ public class Casilla {
         this.fila = fila;
         this.columna = columna;
     }
-
     public int getColumna() {
         return columna;
     }
