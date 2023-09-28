@@ -10,6 +10,7 @@ import androidx.gridlayout.widget.GridLayout
 import com.example.terrivial.R
 import com.example.terrivial.modelo.casino.battleship.Battleship
 import com.example.terrivial.modelo.casino.battleship.Casilla
+import com.example.terrivial.modelo.casino.battleship.JugadorBattleship
 import com.example.terrivial.modelo.casino.battleship.TipoEstado
 import java.beans.PropertyChangeEvent
 import java.util.stream.IntStream.range
@@ -18,7 +19,6 @@ class BattleshipGUI : JuegoView() {
     private lateinit var aliado : GridLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_battleship_gui)
         oponente = findViewById(R.id.openente)
         aliado = findViewById(R.id.aliado)
         oponente.columnCount = 10
@@ -28,7 +28,7 @@ class BattleshipGUI : JuegoView() {
         generarBotones(oponente)
         generarBotones(aliado)
         this.juego = Battleship(this.getApuesta())
-       (this.juego as Battleship).addListeners(this)
+        this.juego.addPropertyChangeListener(this)
     }
 
     override fun getLayoutID(): Int {
@@ -37,9 +37,14 @@ class BattleshipGUI : JuegoView() {
 
     fun generarBotones(tablero : GridLayout){
         range(0, tablero.rowCount).forEach {
-            range(0,tablero.columnCount).forEach { _->
+            range(0,tablero.columnCount).forEach { j->
                 val b = Button(this)
+                b.contentDescription = "$it,$j"
                 b.layoutParams = RelativeLayout.LayoutParams(60,60)
+                b.setOnClickListener{
+                    juego.ejecutar(it.contentDescription.toString())
+                }
+                if(tablero == this.aliado) b.isEnabled = false
                 tablero.addView(b)
             }
         }
@@ -50,6 +55,32 @@ class BattleshipGUI : JuegoView() {
             val casilla = p0!!.oldValue as Casilla
             aliado.getChildAt(casilla.fila * aliado.columnCount + casilla.columna).background.setTint(Color.GREEN)
         }
+        else if(p0?.propertyName.equals("Tocado")){
+            val casilla = p0!!.oldValue as Casilla
+            var tablero: GridLayout? = null
+            if(p0.newValue is JugadorBattleship) tablero = oponente
+            else tablero = aliado
+            tablero.getChildAt(casilla.fila * aliado.columnCount + casilla.columna).background.setTint(Color.RED)
+            tablero.getChildAt(casilla.fila * aliado.columnCount + casilla.columna).isEnabled = false
+        }
+        else if(p0?.propertyName.equals("Hundido")){
+            val casillas = p0!!.oldValue as List<Casilla>
+            var tablero: GridLayout? = null
+            if(p0.newValue is JugadorBattleship) tablero = oponente
+            else tablero = aliado
+            casillas.forEach{
+                tablero!!.getChildAt(it.fila*aliado.columnCount+it.columna).background.setTint(Color.BLACK)
+            }
+        }
+        else if(p0?.propertyName.equals("Agua")){
+            val casilla = p0!!.oldValue as Casilla
+            var tablero: GridLayout? = null
+            if(p0.newValue is JugadorBattleship) tablero = oponente
+            else tablero = aliado
+            tablero.getChildAt(casilla.fila * aliado.columnCount + casilla.columna).background.setTint(Color.BLUE)
+            tablero.getChildAt(casilla.fila * aliado.columnCount + casilla.columna).isEnabled = false
+        }
+        else super.propertyChange(p0)
     }
 
     override fun onBackPressed() {

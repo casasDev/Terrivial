@@ -21,4 +21,8 @@ public class Tablero {
     public static int getFilas(){
         return FILAS;
     }
+
+    public Casilla[][] getCasillas() {
+        return this.casillas;
+    }
 }

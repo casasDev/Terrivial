@@ -1,13 +1,14 @@
 package com.example.terrivial.modelo.casino.battleship;
 
+import android.util.Log;
+
+import com.example.terrivial.modelo.Jugador;
+
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.atomic.AtomicBoolean;
-
-import static java.util.stream.IntStream.range;
 
 public abstract class Usuario {
     private Tablero tableroPropio;
@@ -21,7 +22,23 @@ public abstract class Usuario {
     public void addPCL(PropertyChangeListener pcl){
         this.pcs.addPropertyChangeListener(pcl);
     }
-    protected abstract void disparar(int x, int y);
+    protected void disparar(int x, int y, List<Barco> listaBarcos) {
+        Casilla objetivo = this.getTableroRival().getCasilla(x,y);
+        if(objetivo.getEstado()==TipoEstado.BARCO){
+            objetivo.setEstado(TipoEstado.TOCADO);
+            this.getPcs().firePropertyChange("Tocado",objetivo,this);
+            Barco tocado = listaBarcos.stream().filter(b -> b.getListaCasillas().contains(objetivo)).findFirst().orElse(null);
+            if(tocado.estaHundido()){
+                tocado.hundir();
+                this.getPcs().firePropertyChange("Hundido",tocado.getListaCasillas(),this);
+                Log.d("XDXDXD", flotaHundida() +","+(this instanceof JugadorBattleship));
+                if(flotaHundida()) this.getPcs().firePropertyChange("Derrota",this,0);
+            }
+        } else{
+            objetivo.setEstado(TipoEstado.AGUA);
+            this.getPcs().firePropertyChange("Agua",objetivo,this);
+        }
+    }
     protected void generarYColocarBarcos(int tamanioMax){
         for(int i = tamanioMax; 1 <= i; i--){
             for(int j = tamanioMax; i <= j; j--){
@@ -44,7 +61,7 @@ public abstract class Usuario {
         for (int i = 0; i < t; i++) {
             Casilla casilla = tableroPropio.getCasilla(fila,columna);
             casilla.setEstado(TipoEstado.BARCO);
-            if(this instanceof Jugador) this.pcs.firePropertyChange("Barco",casilla,0);
+            if(this instanceof JugadorBattleship) this.pcs.firePropertyChange("Barco",casilla,0);
             barco.anadirCasilla(casilla);
             if (horizontal) {
                 columna++;
@@ -91,5 +108,23 @@ public abstract class Usuario {
 
     public Tablero getTableroPropio() {
         return tableroPropio;
+    }
+    public void setTableroRival(Tablero tableroRival){
+        this.tableroRival = tableroRival;
+    }
+
+    public Tablero getTableroRival() {
+        return this.tableroRival;
+    }
+
+    public List<Barco> getListaBarcos() {
+        return this.listaBarcos;
+    }
+
+    public PropertyChangeSupport getPcs() {
+        return this.pcs;
+    }
+    public boolean flotaHundida(){
+        return this.listaBarcos.stream().allMatch(Barco::estaHundido);
     }
 }

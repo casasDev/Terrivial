@@ -23,10 +23,14 @@ public class Barco {
     public void anadirCasilla(Casilla casilla){
        this.listaCasillas.add(casilla);
     }
-    public void quitarCasilla(Casilla casilla){
-        this.listaCasillas.remove(casilla);
-    }
     public boolean estaHundido(){
-        return this.listaCasillas.size() == 0;
+        return this.listaCasillas.stream().allMatch(c -> c.getEstado()==TipoEstado.TOCADO||c.getEstado()==TipoEstado.HUNDIDO);
+    }
+    public void hundir(){
+        this.listaCasillas.forEach(c -> c.setEstado(TipoEstado.HUNDIDO));
+    }
+
+    public List<Casilla> getListaCasillas() {
+        return this.listaCasillas;
     }
 }
